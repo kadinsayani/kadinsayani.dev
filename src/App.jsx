@@ -21,7 +21,9 @@ function App() {
   return (
     <div>
       {isLoading ? (
-        <PacmanLoader color="#ffffffde" aria-label="Loading Spinner" />
+        <div className="center-container">
+          <PacmanLoader color="#ffffffde" aria-label="Loading Spinner" />
+        </div>
       ) : (
         <div>
           <Header />
