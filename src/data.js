@@ -29,7 +29,7 @@ export const appData = [
     description:
       "Web application for families with collaboration and interaction features including shared to-do lists and twitter like social media features 🏡",
     page: "",
-    repo: "Web application for families with collaboration and interaction features including shared to-do lists and twitter like social media features 🏡",
+    repo: "https://github.com/kadinsayani/famify",
     link: "",
     img: "",
   },

@@ -1,4 +1,5 @@
 import { appData } from "../data";
+import { FaGithub } from "react-icons/fa";
 
 function Apps() {
   return (
@@ -7,8 +8,13 @@ function Apps() {
       <div className="app-container">
         {appData.map((data, key) => {
           return (
-            <div key={key}>
-              <a href={data.repo}>{data.name}</a>
+            <div className="app-item" key={key}>
+              {data.name}
+              <div>
+                <a href={data.repo} target="_blank" rel="noopener noreferrer">
+                  <FaGithub size="25px" />
+                </a>
+              </div>
             </div>
           );
         })}
