@@ -1,8 +1,18 @@
+import { appData } from "../data";
+
 function Apps() {
   return (
     <>
       <h2>Apps</h2>
-      <p>Coming soon...</p>
+      <div className="app-container">
+        {appData.map((data, key) => {
+          return (
+            <div key={key}>
+              <a href={data.repo}>{data.name}</a>
+            </div>
+          );
+        })}
+      </div>
     </>
   );
 }
