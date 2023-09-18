@@ -4,9 +4,12 @@
   line-height: 1.5;
   font-weight: 400;
 
+  /* b620e0 32c5ff f05138*/
+
   color-scheme: light dark;
   color: #ffffffde;
-  background-color: #242424;
+  background: linear-gradient(45deg, #f05138, #b620e0, #32c5ff);
+  /* background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,7 +24,7 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #f05138;
+  color: #ffffff;
 }
 
 body {
