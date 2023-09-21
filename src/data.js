@@ -37,10 +37,10 @@ export const appData = [
 
 export const projectData = [
   {
-    name: "first-project",
+    name: "virtual-forest",
     description: "CPSC 581 Project 1",
-    page: "",
-    repo: "",
+    page: "/projects/virtual-forest",
+    repo: "https://github.com/kadinsayani/virtual-forest",
     link: "",
     img: "",
   },

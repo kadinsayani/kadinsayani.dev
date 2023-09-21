@@ -1,12 +1,12 @@
 import "../styles/App.css";
-import Me from "../components/Me";
-import Apps from "../components/Apps";
-import Projects from "../components/Projects";
-import Header from "../components/Header";
+import Me from "../components/me";
+import Apps from "../components/apps";
+import Projects from "../components/projects";
+import Header from "../components/header";
 import { useEffect, useState } from "react";
 import { PacmanLoader } from "react-spinners";
 
-function App() {
+function Root() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -29,8 +29,8 @@ function App() {
         <div>
           <Header />
           <Me />
-          <Projects />
           <Apps />
+          <Projects />
           <p>Kadin Sayani © 2023</p>
         </div>
       )}
@@ -38,4 +38,4 @@ function App() {
   );
 }
 
-export default App;
+export default Root;
