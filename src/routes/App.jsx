@@ -1,7 +1,8 @@
-import "./App.css";
-import Me from "./components/Me";
-import Apps from "./components/Apps";
-import Header from "./components/Header";
+import "../styles/App.css";
+import Me from "../components/Me";
+import Apps from "../components/Apps";
+import Projects from "../components/Projects";
+import Header from "../components/Header";
 import { useEffect, useState } from "react";
 import { PacmanLoader } from "react-spinners";
 
@@ -28,6 +29,7 @@ function App() {
         <div>
           <Header />
           <Me />
+          <Projects />
           <Apps />
           <p>Kadin Sayani © 2023</p>
         </div>

@@ -34,3 +34,14 @@ export const appData = [
     img: "",
   },
 ];
+
+export const projectData = [
+  {
+    name: "first-project",
+    description: "CPSC 581 Project 1",
+    page: "",
+    repo: "",
+    link: "",
+    img: "",
+  },
+];

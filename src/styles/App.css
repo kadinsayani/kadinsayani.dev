@@ -73,3 +73,25 @@
 .app-item:hover {
   background-color: #ffffff20;
 }
+
+.project-container {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+.project-item {
+  display: grid;
+  grid-template-rows: auto auto;
+  border: #ffffffde;
+  border-radius: 20px;
+  gap: 10px;
+  padding: 10px;
+  border-style: solid;
+  min-width: 20vw;
+}
+
+.project-item:hover {
+  background-color: #ffffff20;
+}

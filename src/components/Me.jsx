@@ -1,5 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
-import "../App.css";
+import "../styles/App.css";
 import me from "../assets/memoji.png";
 
 function Me() {
