@@ -1,5 +1,6 @@
 import { appData } from "../data";
 import { FaGithub } from "react-icons/fa";
+import "../styles/App.css";
 
 function Apps() {
   return (
