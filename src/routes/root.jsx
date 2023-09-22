@@ -3,7 +3,6 @@ import Me from "../components/me";
 import Apps from "../components/apps";
 import Projects from "../components/projects";
 import Header from "../components/header";
-import Contact from "../components/contact";
 import { useEffect, useState } from "react";
 import { PacmanLoader } from "react-spinners";
 
@@ -28,7 +27,6 @@ function Root() {
         </div>
       ) : (
         <div>
-          <Contact />
           <Header />
           <Me />
           <Apps />
