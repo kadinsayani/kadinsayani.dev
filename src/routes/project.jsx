@@ -16,7 +16,7 @@ function Project(props) {
   return (
     <div>
       <button onClick={back} className="back-button">
-        <IoArrowBack size={40} />
+        <IoArrowBack size={40} color={"#ffffffde"}/>
       </button>
       <h1>{project.name}</h1>
       <p>{project.description}</p>
