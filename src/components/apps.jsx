@@ -1,5 +1,5 @@
 import { appData } from "../data";
-import { FaGithub } from "react-icons/fa";
+import { IoLogoGithub } from "react-icons/io5";
 import "../styles/App.css";
 
 function Apps() {
@@ -13,7 +13,7 @@ function Apps() {
               {data.name}
               <div>
                 <a href={data.repo} target="_blank" rel="noopener noreferrer">
-                  <FaGithub size="25px" />
+                  <IoLogoGithub size="25px" />
                 </a>
               </div>
             </div>

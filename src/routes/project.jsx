@@ -2,8 +2,8 @@ import { useNavigate } from "react-router-dom";
 import { projectData } from "../data";
 import "../styles/App.css";
 import { PropTypes } from "prop-types";
-import { BiArrowBack } from "react-icons/bi";
-import { FaGithub } from "react-icons/fa";
+import { IoArrowBack } from "react-icons/io5";
+import { IoLogoGithub } from "react-icons/io5";
 
 function Project(props) {
   const navigate = useNavigate();
@@ -16,12 +16,12 @@ function Project(props) {
   return (
     <div>
       <button onClick={back} className="back-button">
-        <BiArrowBack size={40} />
+        <IoArrowBack size={40} />
       </button>
       <h1>{project.name}</h1>
       <p>{project.description}</p>
       <a href={project.repo}>
-        <FaGithub size="25px" />
+        <IoLogoGithub size="25px" />
       </a>
     </div>
   );
