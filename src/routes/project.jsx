@@ -4,6 +4,7 @@ import "../styles/App.css";
 import { PropTypes } from "prop-types";
 import { IoArrowBack } from "react-icons/io5";
 import { IoLogoGithub } from "react-icons/io5";
+import { IoLink } from "react-icons/io5";
 
 function Project(props) {
   const navigate = useNavigate();
@@ -16,13 +17,18 @@ function Project(props) {
   return (
     <div>
       <button onClick={back} className="back-button">
-        <IoArrowBack size={40} color={"#ffffffde"}/>
+        <IoArrowBack size={40} color={"#ffffffde"} />
       </button>
       <h1>{project.name}</h1>
+      <div className="contact">
+        <a href={project.repo}>
+          <IoLogoGithub size="25px" />
+        </a>
+        <a href={project.link}>
+          <IoLink size="25px" />
+        </a>
+      </div>
       <p>{project.description}</p>
-      <a href={project.repo}>
-        <IoLogoGithub size="25px" />
-      </a>
     </div>
   );
 }
