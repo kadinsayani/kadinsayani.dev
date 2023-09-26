@@ -4,7 +4,7 @@ export const appData = [
     description: "macOS/iOS application for creating Kanban boards 🖥️",
     page: "/apps/kanswift",
     repo: "https://github.com/kadinsayani/Kanswift",
-    link: "",
+    link: "/apps/kanswift",
     img: "",
   },
   {
@@ -12,7 +12,7 @@ export const appData = [
     description: "Customizable Unix-like shell built in Rust ⌨️",
     page: "/apps/ksh",
     repo: "https://github.com/kadinsayani/ksh",
-    link: "",
+    link: "/apps/ksh",
     img: "",
   },
   {
@@ -21,7 +21,7 @@ export const appData = [
       "A user friendly CLI for getting cryptocurrency prices and information 🚀",
     page: "/apps/cryptop",
     repo: "https://github.com/kadinsayani/cryptop",
-    link: "",
+    link: "https://crates.io/crates/cryptop",
     img: "",
   },
   {
@@ -30,7 +30,7 @@ export const appData = [
       "Web app for families with collaboration and interaction features including shared lists and twitter like social media features 🏡",
     page: "/apps/famify",
     repo: "https://github.com/kadinsayani/famify",
-    link: "",
+    link: "/apps/famify",
     img: "",
   },
 ];
