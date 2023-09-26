@@ -1,8 +1,8 @@
 export const appData = [
   {
     name: "Kanswift",
-    description: "macOS application for creating Kanban boards 🖥️",
-    page: "",
+    description: "macOS/iOS application for creating Kanban boards 🖥️",
+    page: "/apps/kanswift",
     repo: "https://github.com/kadinsayani/Kanswift",
     link: "",
     img: "",
@@ -10,7 +10,7 @@ export const appData = [
   {
     name: "ksh",
     description: "Customizable Unix-like shell built in Rust ⌨️",
-    page: "",
+    page: "/apps/ksh",
     repo: "https://github.com/kadinsayani/ksh",
     link: "",
     img: "",
@@ -19,7 +19,7 @@ export const appData = [
     name: "cryptop",
     description:
       "A user friendly CLI for getting cryptocurrency prices and information 🚀",
-    page: "",
+    page: "/apps/cryptop",
     repo: "https://github.com/kadinsayani/cryptop",
     link: "",
     img: "",
@@ -28,7 +28,7 @@ export const appData = [
     name: "famify",
     description:
       "Web app for families with collaboration and interaction features including shared lists and twitter like social media features 🏡",
-    page: "",
+    page: "/apps/famify",
     repo: "https://github.com/kadinsayani/famify",
     link: "",
     img: "",

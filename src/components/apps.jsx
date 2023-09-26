@@ -1,6 +1,7 @@
 import { appData } from "../data";
 import { IoLogoGithub } from "react-icons/io5";
 import "../styles/App.css";
+import { Link } from "react-router-dom";
 
 function Apps() {
   return (
@@ -9,14 +10,16 @@ function Apps() {
       <div className="app-container">
         {appData.map((data, key) => {
           return (
-            <div className="app-item" key={key}>
-              {data.name}
-              <div>
-                <a href={data.repo} target="_blank" rel="noopener noreferrer">
-                  <IoLogoGithub size="25px" />
-                </a>
+            <Link key={key} to={`${data.page}`}>
+              <div className="app-item" key={key}>
+                {data.name}
+                <div>
+                  <a href={data.repo} target="_blank" rel="noopener noreferrer">
+                    <IoLogoGithub size="25px" />
+                  </a>
+                </div>
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>
