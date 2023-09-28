@@ -42,7 +42,6 @@ export const projectData = [
     page: "/projects/virtual-forest",
     repo: "https://github.com/kadinsayani/virtual-forest",
     link: "https://virtual-forest-nine.vercel.app/",
-    video: "https://www.youtube.com/watch?v=RtVM1qv3i3Y",
     conceptImages: [
       {
         url: "/project1/concept/cimg1.png",
@@ -129,6 +128,7 @@ export const projectData = [
         caption: "Concept Image 10",
       },
     ],
+    detailedWriteup: "",
     description:
       "In this game, users become nature explorers who can learn about and interact with different species in a virtual forest. It combines education and entertainment, teaching kids about various species in an ecosystem and how the population of different species interact with each other.",
   },

@@ -103,9 +103,17 @@ function Project(props) {
           ))}
         </Slide>
       </div>
-      <p>{project.conceptWriteup}</p>
+      <p>{project.detailedWriteup}</p>
       <h2>Video</h2>
-      <iframe width="420" height="315" src={project.video}></iframe>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/RtVM1qv3i3Y?si=p7L_hvGaUazbKtmp"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
     </div>
   );
 }
