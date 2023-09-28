@@ -5,6 +5,44 @@ import { PropTypes } from "prop-types";
 import { IoArrowBack } from "react-icons/io5";
 import { IoLogoGithub } from "react-icons/io5";
 import { IoLink } from "react-icons/io5";
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
+import { IoArrowBackCircleSharp } from "react-icons/io5";
+import { IoArrowForwardCircleSharp } from "react-icons/io5";
+
+const spanStyle = {
+  padding: "20px",
+  background: "#efefef",
+  color: "#000000",
+  position: "absolute",
+  bottom: "0",
+};
+
+const divStyle = {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  backgroundSize: "cover",
+  height: "800px",
+};
+
+const buttonStyle = {
+  background: "#b620e0",
+  border: "0px",
+};
+
+const properties = {
+  prevArrow: (
+    <button style={{ ...buttonStyle }}>
+      <IoArrowBackCircleSharp size="20px" color="#ffffffde" />
+    </button>
+  ),
+  nextArrow: (
+    <button style={{ ...buttonStyle }}>
+      <IoArrowForwardCircleSharp size="20px" color="#ffffffde" />
+    </button>
+  ),
+};
 
 function Project(props) {
   const navigate = useNavigate();
@@ -28,7 +66,46 @@ function Project(props) {
           <IoLink size="25px" />
         </a>
       </div>
+      <h2>{project.project}</h2>
       <p>{project.description}</p>
+      <h2>Detailed Sketches</h2>
+      <div className="slide-container">
+        <Slide {...properties}>
+          {project.conceptImages.map((slideImage, index) => (
+            <div key={index}>
+              <div
+                style={{
+                  ...divStyle,
+                  backgroundImage: `url(${slideImage.url})`,
+                }}
+              >
+                <span style={spanStyle}>{slideImage.caption}</span>
+              </div>
+            </div>
+          ))}
+        </Slide>
+      </div>
+      <p>{project.conceptWriteup}</p>
+      <h2>Concept Sketches</h2>
+      <div className="slide-container">
+        <Slide {...properties}>
+          {project.detailedImages.map((slideImage, index) => (
+            <div key={index}>
+              <div
+                style={{
+                  ...divStyle,
+                  backgroundImage: `url(${slideImage.url})`,
+                }}
+              >
+                <span style={spanStyle}>{slideImage.caption}</span>
+              </div>
+            </div>
+          ))}
+        </Slide>
+      </div>
+      <p>{project.conceptWriteup}</p>
+      <h2>Video</h2>
+      <iframe width="420" height="315" src={project.video}></iframe>
     </div>
   );
 }

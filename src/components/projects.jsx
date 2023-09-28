@@ -11,7 +11,7 @@ function Projects() {
             <Link key={key} to={`${data.page}`}>
               <div className="project-item" key={key}>
                 {data.name}
-                <p>{data.description}</p>
+                <p>{data.project}</p>
               </div>
             </Link>
           );

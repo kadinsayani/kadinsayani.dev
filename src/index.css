@@ -7,7 +7,7 @@
   /* b620e0 32c5ff f05138*/
 
   color-scheme: light dark;
-  color: #ffffffde;
+  color: #ffffffde !important;
   background: linear-gradient(45deg, #f05138, #b620e0, #32c5ff);
   /* background-color: #242424; */
 
