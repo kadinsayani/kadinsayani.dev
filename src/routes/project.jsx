@@ -9,6 +9,7 @@ import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import { IoArrowBackCircleSharp } from "react-icons/io5";
 import { IoArrowForwardCircleSharp } from "react-icons/io5";
+import ScrollToTop from "../components/scrollToTop.jsx";
 
 const spanStyle = {
   padding: "20px",
@@ -54,6 +55,7 @@ function Project(props) {
 
   return (
     <div>
+      <ScrollToTop />
       <button onClick={back} className="back-button">
         <IoArrowBack size={40} color={"#ffffffde"} />
       </button>
