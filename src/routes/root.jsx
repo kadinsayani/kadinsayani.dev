@@ -3,7 +3,8 @@ import Me from "../components/me";
 import Apps from "../components/apps";
 import Projects from "../components/projects";
 import Header from "../components/header";
-import { useEffect } from "react";
+import ScrollToTop from "../components/scrollToTop";
+// import { useEffect } from "react";
 // import { PacmanLoader } from "react-spinners";
 
 function Root() {
@@ -21,6 +22,7 @@ function Root() {
 
   return (
     <div>
+      <ScrollToTop />
       {/* {isLoading ? (
         <div className="center-container">
           <PacmanLoader color="#ffffffde" aria-label="Loading Spinner" />

@@ -48,7 +48,7 @@ const properties = {
 function Project(props) {
   const navigate = useNavigate();
   const back = () => {
-    navigate(-1);
+    navigate("/");
   };
 
   const project = projectData.find((item) => item.name == props.name);
