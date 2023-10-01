@@ -7,12 +7,10 @@ import { IoLogoGithub } from "react-icons/io5";
 import { IoLink } from "react-icons/io5";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import { IoArrowBackCircleSharp } from "react-icons/io5";
-import { IoArrowForwardCircleSharp } from "react-icons/io5";
 import ScrollToTop from "../components/scrollToTop.jsx";
 
 const spanStyle = {
-  padding: "20px",
+  padding: "10px",
   background: "#efefef",
   color: "#000000",
   position: "absolute",
@@ -23,26 +21,11 @@ const divStyle = {
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  backgroundSize: "cover",
-  height: "100vh",
-};
-
-const buttonStyle = {
-  background: "#b620e0",
-  border: "0px",
 };
 
 const properties = {
-  prevArrow: (
-    <button style={{ ...buttonStyle }}>
-      <IoArrowBackCircleSharp size="20px" color="#ffffffde" />
-    </button>
-  ),
-  nextArrow: (
-    <button style={{ ...buttonStyle }}>
-      <IoArrowForwardCircleSharp size="20px" color="#ffffffde" />
-    </button>
-  ),
+  arrows: false,
+  indicators: true,
 };
 
 function Project(props) {
@@ -75,44 +58,62 @@ function Project(props) {
           <h2>Detailed Sketches</h2>
           <div className="slide-container">
             <Slide {...properties}>
-              {project.conceptImages.map((slideImage, index) => (
-                <div key={index}>
-                  <div
-                    style={{
-                      ...divStyle,
-                      backgroundImage: `url(${slideImage.url})`,
-                    }}
-                  >
-                    <span style={spanStyle}>{slideImage.caption}</span>
-                  </div>
+              {project.detailedImages.map((slideImage, index) => (
+                <div style={divStyle} key={index}>
+                  <img
+                    key={index}
+                    src={slideImage.url}
+                    width={800}
+                    height={600}
+                    alt={`Detailed Sketch ${index + 1}`}
+                  />
+                  <span style={spanStyle}>{slideImage.caption}</span>
                 </div>
               ))}
             </Slide>
           </div>
-          <p>{project.conceptWriteup}</p>
+          <div className="writeup" style={{ textAlign: "left" }}>
+            <ol>
+              {project.detailedPoints.map((detailedPoint, index) => (
+                <li key={index}>{detailedPoint.point}</li>
+              ))}
+            </ol>
+            {project.detailedWriteup.map((p) => (
+              <p key="p">{p}</p>
+            ))}
+          </div>
           <h2>Concept Sketches</h2>
           <div className="slide-container">
             <Slide {...properties}>
-              {project.detailedImages.map((slideImage, index) => (
-                <div key={index}>
-                  <div
-                    style={{
-                      ...divStyle,
-                      backgroundImage: `url(${slideImage.url})`,
-                    }}
-                  >
-                    <span style={spanStyle}>{slideImage.caption}</span>
-                  </div>
+              {project.conceptImages.map((slideImage, index) => (
+                <div style={divStyle} key={index}>
+                  <img
+                    key={index}
+                    src={slideImage.url}
+                    width={800}
+                    height={600}
+                    alt={`Detailed Sketch ${index + 1}`}
+                  />
+                  <span style={spanStyle}>{slideImage.caption}</span>
                 </div>
               ))}
             </Slide>
           </div>
-          <p>{project.detailedWriteup}</p>
+          <div className="writeup" style={{ textAlign: "left" }}>
+            <ol>
+              {project.conceptPoints.map((conceptPoint, index) => (
+                <li key={index}>{conceptPoint.point}</li>
+              ))}
+            </ol>
+            {project.conceptWriteup.map((p) => (
+              <p key="p">{p}</p>
+            ))}
+          </div>
           <h2>Video</h2>
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/RtVM1qv3i3Y?si=p7L_hvGaUazbKtmp"
+            src="https://www.youtube.com/embed/19pYyHMV0e8?si=QKF4ZsyqyruV9cjB"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
