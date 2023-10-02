@@ -5,6 +5,7 @@ import { PropTypes } from "prop-types";
 import { IoArrowBack } from "react-icons/io5";
 import { IoLogoGithub } from "react-icons/io5";
 import { IoLink } from "react-icons/io5";
+import ScrollToTop from "../components/scrollToTop.jsx";
 
 function App(props) {
   const navigate = useNavigate();
@@ -16,6 +17,7 @@ function App(props) {
 
   return (
     <div>
+      <ScrollToTop />
       <button onClick={back} className="back-button">
         <IoArrowBack size={40} color={"#ffffffde"} />
       </button>
