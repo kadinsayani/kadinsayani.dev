@@ -3,8 +3,8 @@ export const appData = [
     name: "Kanbo",
     description: "macOS application for creating Kanban boards 🖥️",
     page: "/apps/kanbo",
-    repo: "https://github.com/kadinsayani/Kanswift",
-    link: "https://github.com/kadinsayani/Kanswift",
+    repo: "https://github.com/kadinsayani/Kanbo",
+    link: "https://github.com/kadinsayani/Kanbo",
     img: "",
   },
   {
