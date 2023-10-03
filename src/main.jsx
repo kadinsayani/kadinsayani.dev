@@ -34,8 +34,8 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/apps/kanswift",
-    element: <App name={"Kanswift"} />,
+    path: "/apps/kanbo",
+    element: <App name={"Kanbo"} />,
     errorElement: <ErrorPage />,
   },
 ]);
