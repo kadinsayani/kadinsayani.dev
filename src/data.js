@@ -1,6 +1,6 @@
 export const appData = [
   {
-    name: "Kanswift",
+    name: "Kanbo",
     description: "macOS application for creating Kanban boards 🖥️",
     page: "/apps/kanswift",
     repo: "https://github.com/kadinsayani/Kanswift",
