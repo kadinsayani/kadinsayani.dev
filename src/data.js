@@ -4,8 +4,9 @@ export const appData = [
     description: "macOS application for creating Kanban boards 🖥️",
     page: "/apps/kanbo",
     repo: "https://github.com/kadinsayani/Kanbo",
-    link: "https://github.com/kadinsayani/Kanbo",
+    link: "https://apps.apple.com/ca/app/kanbo/id6468838355?mt=12",
     img: "",
+    type: "Apple",
     privacyPolicy: `
 **Privacy Policy for Kanbo**
 

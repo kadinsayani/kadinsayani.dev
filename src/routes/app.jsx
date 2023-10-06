@@ -6,6 +6,7 @@ import { IoArrowBack } from "react-icons/io5";
 import { IoLogoGithub } from "react-icons/io5";
 import { IoLink } from "react-icons/io5";
 import ScrollToTop from "../components/scrollToTop.jsx";
+import { GrAppleAppStore } from "react-icons/gr";
 
 function App(props) {
   const navigate = useNavigate();
@@ -26,9 +27,15 @@ function App(props) {
         <a href={app.repo}>
           <IoLogoGithub size="25px" />
         </a>
-        <a href={app.link}>
-          <IoLink size="25px" />
-        </a>
+        {app.type === "Apple" ? (
+          <a href={app.link}>
+            <GrAppleAppStore size="25px" />
+          </a>
+        ) : (
+          <a href={app.link}>
+            <IoLink size="25px" />
+          </a>
+        )}
       </div>
       <p>{app.description}</p>
     </div>
