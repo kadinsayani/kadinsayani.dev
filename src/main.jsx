@@ -6,6 +6,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Project from "./routes/project.jsx";
 import App from "./routes/app.jsx";
+import PrivacyPolicy from "./routes/privacy-policy.jsx";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,11 @@ const router = createBrowserRouter([
   {
     path: "/apps/kanbo",
     element: <App name={"Kanbo"} />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/apps/kanbo/privacy-policy",
+    element: <PrivacyPolicy name={"Kanbo"} />,
     errorElement: <ErrorPage />,
   },
 ]);
