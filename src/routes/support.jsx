@@ -3,7 +3,7 @@ import { PropTypes } from "prop-types";
 // import ReactMarkdown from "react-markdown";
 
 function Support(props) {
-  const app = appData.find((item) => item.name == props.name);
+  //   const app = appData.find((item) => item.name == props.name);
   return (
     <div>
       <h1>Kanbo Support</h1>
