@@ -102,7 +102,7 @@ export const projectData = [
       },
       {
         point:
-          "Tracking Progress: A progress bar at the top of the screen will indicate the number of objects yet to be discovered. The goal is to find all the objects, and being able to see their progress will motivate children to explore and learn more. ",
+          "Tracking Progress: A progress bar at the top of the screen will indicate the number of objects yet to be discovered. The goal is to find all the objects, and being able to see their progress will motivate children to explore and learn more.",
       },
       {
         point:
@@ -240,6 +240,165 @@ export const projectData = [
       },
       {
         url: "/project1/concept/cimg10.png",
+        caption: "Concept Sketch 10",
+      },
+    ],
+  },
+  {
+    name: "Unlock Interfaces",
+    project: "CPSC 581 Project 2",
+    page: "/projects/unlockinterfaces",
+    repo: "https://github.com/kadinsayani/unlockinterface",
+    link: "",
+    description:
+      "Two innovative and new approaches to mobile unlock screens were developed. The first interface is touch based, and involves playing a sequence of piano keys to unlock the device. The second interface is both touch and sensor based, and involves selecting a sequence of pops from a vending machine, and shaking the mobile device until they fizz.",
+    detailedWriteup: [""],
+    detailedPoints: [
+      {
+        point: "",
+      },
+      {
+        point: "",
+      },
+      {
+        point: "",
+      },
+      {
+        point: "",
+      },
+      {
+        point: "",
+      },
+      {
+        point: "",
+      },
+      {
+        point: "",
+      },
+      {
+        point: "",
+      },
+      {
+        point: "",
+      },
+      {
+        point: "",
+      },
+    ],
+    detailedImages: [
+      {
+        url: "/project2/detailed/dimg1.png",
+        caption: "Detailed Sketch 1",
+      },
+      {
+        url: "/project2/detailed/dimg2.png",
+        caption: "Detailed Sketch 2",
+      },
+      {
+        url: "/project2/detailed/dimg3.png",
+        caption: "Detailed Sketch 3",
+      },
+      {
+        url: "/project2/detailed/dimg4.png",
+        caption: "Detailed Sketch 4",
+      },
+      {
+        url: "/project2/detailed/dimg5.png",
+        caption: "Detailed Sketch 5",
+      },
+      {
+        url: "/project2/detailed/dimg6.png",
+        caption: "Detailed Sketch 6",
+      },
+      {
+        url: "/project2/detailed/dimg7.png",
+        caption: "Detailed Sketch 7",
+      },
+      {
+        url: "/project2/detailed/dimg8.png",
+        caption: "Detailed Sketch 8",
+      },
+      {
+        url: "/project2/detailed/dimg9.png",
+        caption: "Detailed Sketch 9",
+      },
+      {
+        url: "/project2/detailed/dimg10.png",
+        caption: "Detailed Sketch 10",
+      },
+    ],
+    conceptWriteup: [""],
+    conceptPoints: [
+      {
+        point: "",
+      },
+      {
+        point: "",
+      },
+      {
+        point: "",
+      },
+      {
+        point: "",
+      },
+      {
+        point: "",
+      },
+      {
+        point: "",
+      },
+      {
+        point: "",
+      },
+      {
+        point: "",
+      },
+      {
+        point: "",
+      },
+      {
+        point: "",
+      },
+    ],
+    conceptImages: [
+      {
+        url: "/project2/concept/cimg1.png",
+        caption: "Concept Sketch 1",
+      },
+      {
+        url: "/project2/concept/cimg2.png",
+        caption: "Concept Sketch 2",
+      },
+      {
+        url: "/project2/concept/cimg3.png",
+        caption: "Concept Sketch 3",
+      },
+      {
+        url: "/project2/concept/cimg4.png",
+        caption: "Concept Sketch 4",
+      },
+      {
+        url: "/project2/concept/cimg5.png",
+        caption: "Concept Sketch 5",
+      },
+      {
+        url: "/project2/concept/cimg6.png",
+        caption: "Concept Sketch 6",
+      },
+      {
+        url: "/project2/concept/cimg7.png",
+        caption: "Concept Sketch 7",
+      },
+      {
+        url: "/project2/concept/cimg8.png",
+        caption: "Concept Sketch 8",
+      },
+      {
+        url: "/project2/concept/cimg9.png",
+        caption: "Concept Sketch 9",
+      },
+      {
+        url: "/project2/concept/cimg10.png",
         caption: "Concept Sketch 10",
       },
     ],

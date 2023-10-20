@@ -59,16 +59,22 @@ function Project(props) {
               <p key="p">{p}</p>
             ))}
           </div>
-          <h2>Video</h2>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/19pYyHMV0e8?si=QKF4ZsyqyruV9cjB"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+          <div>
+            {project.name === "virtual-forest" ? (
+              <>
+                <h2>Video</h2>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/19pYyHMV0e8?si=QKF4ZsyqyruV9cjB"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </>
+            ) : null}
+          </div>
         </div>
       </div>
     </div>

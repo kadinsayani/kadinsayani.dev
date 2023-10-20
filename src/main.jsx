@@ -21,6 +21,11 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
+    path: "/projects/unlockinterfaces",
+    element: <Project name={"Unlock Interfaces"} />,
+    errorElement: <ErrorPage />,
+  },
+  {
     path: "/apps/ksh",
     element: <App name={"ksh"} />,
     errorElement: <ErrorPage />,
