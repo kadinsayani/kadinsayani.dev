@@ -8,7 +8,7 @@ import { IoLink } from "react-icons/io5";
 import Slide from "../components/slide";
 import ScrollToTop from "../components/scrollToTop.jsx";
 
-function Project(props) {
+function Project1(props) {
   const navigate = useNavigate();
   const back = () => {
     navigate("/");
@@ -34,6 +34,7 @@ function Project(props) {
         </div>
         <h2>{project.project}</h2>
         <p>{project.description}</p>
+        <img src={project.img} />
         <div className="skip">
           <h2>Detailed Sketches</h2>
           <Slide images={project.detailedImages} />
@@ -60,20 +61,16 @@ function Project(props) {
             ))}
           </div>
           <div>
-            {project.name === "virtual-forest" ? (
-              <>
-                <h2>Video</h2>
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/19pYyHMV0e8?si=QKF4ZsyqyruV9cjB"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
-              </>
-            ) : null}
+            <h2>Video</h2>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/19pYyHMV0e8?si=QKF4ZsyqyruV9cjB"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </div>
@@ -81,8 +78,8 @@ function Project(props) {
   );
 }
 
-Project.propTypes = {
+Project1.propTypes = {
   name: PropTypes.string,
 };
 
-export default Project;
+export default Project1;

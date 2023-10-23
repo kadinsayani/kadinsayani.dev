@@ -4,7 +4,8 @@ import Root from "./routes/root.jsx";
 import ErrorPage from "./routes/error-page.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Project from "./routes/project.jsx";
+import Project1 from "./routes/project1.jsx";
+import Project2 from "./routes/project2.jsx";
 import App from "./routes/app.jsx";
 import PrivacyPolicy from "./routes/privacy-policy.jsx";
 import Support from "./routes/support.jsx";
@@ -17,12 +18,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/projects/virtual-forest",
-    element: <Project name={"virtual-forest"} />,
+    element: <Project1 name={"virtual-forest"} />,
     errorElement: <ErrorPage />,
   },
   {
     path: "/projects/unlockinterfaces",
-    element: <Project name={"Unlock Interfaces"} />,
+    element: <Project2 name={"Unlock Interfaces"} />,
     errorElement: <ErrorPage />,
   },
   {

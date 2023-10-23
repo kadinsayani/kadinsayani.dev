@@ -252,155 +252,346 @@ export const projectData = [
     link: "",
     description:
       "Two innovative and new approaches to mobile unlock screens were developed. The first interface is touch based, and involves playing a sequence of piano keys to unlock the device. The second interface is both touch and sensor based, and involves selecting a sequence of pops from a vending machine, and shaking the mobile device until they fizz.",
-    detailedWriteup: [""],
-    detailedPoints: [
-      {
-        point: "",
-      },
-      {
-        point: "",
-      },
-      {
-        point: "",
-      },
-      {
-        point: "",
-      },
-      {
-        point: "",
-      },
-      {
-        point: "",
-      },
-      {
-        point: "",
-      },
-      {
-        point: "",
-      },
-      {
-        point: "",
-      },
-      {
-        point: "",
-      },
-    ],
-    detailedImages: [
-      {
-        url: "/project2/detailed/dimg1.png",
-        caption: "Detailed Sketch 1",
-      },
-      {
-        url: "/project2/detailed/dimg2.png",
-        caption: "Detailed Sketch 2",
-      },
-      {
-        url: "/project2/detailed/dimg3.png",
-        caption: "Detailed Sketch 3",
-      },
-      {
-        url: "/project2/detailed/dimg4.png",
-        caption: "Detailed Sketch 4",
-      },
-      {
-        url: "/project2/detailed/dimg5.png",
-        caption: "Detailed Sketch 5",
-      },
-      {
-        url: "/project2/detailed/dimg6.png",
-        caption: "Detailed Sketch 6",
-      },
-      {
-        url: "/project2/detailed/dimg7.png",
-        caption: "Detailed Sketch 7",
-      },
-      {
-        url: "/project2/detailed/dimg8.png",
-        caption: "Detailed Sketch 8",
-      },
-      {
-        url: "/project2/detailed/dimg9.png",
-        caption: "Detailed Sketch 9",
-      },
-      {
-        url: "/project2/detailed/dimg10.png",
-        caption: "Detailed Sketch 10",
-      },
-    ],
-    conceptWriteup: [""],
-    conceptPoints: [
-      {
-        point: "",
-      },
-      {
-        point: "",
-      },
-      {
-        point: "",
-      },
-      {
-        point: "",
-      },
-      {
-        point: "",
-      },
-      {
-        point: "",
-      },
-      {
-        point: "",
-      },
-      {
-        point: "",
-      },
-      {
-        point: "",
-      },
-      {
-        point: "",
-      },
-    ],
-    conceptImages: [
-      {
-        url: "/project2/concept/cimg1.png",
-        caption: "Concept Sketch 1",
-      },
-      {
-        url: "/project2/concept/cimg2.png",
-        caption: "Concept Sketch 2",
-      },
-      {
-        url: "/project2/concept/cimg3.png",
-        caption: "Concept Sketch 3",
-      },
-      {
-        url: "/project2/concept/cimg4.png",
-        caption: "Concept Sketch 4",
-      },
-      {
-        url: "/project2/concept/cimg5.png",
-        caption: "Concept Sketch 5",
-      },
-      {
-        url: "/project2/concept/cimg6.png",
-        caption: "Concept Sketch 6",
-      },
-      {
-        url: "/project2/concept/cimg7.png",
-        caption: "Concept Sketch 7",
-      },
-      {
-        url: "/project2/concept/cimg8.png",
-        caption: "Concept Sketch 8",
-      },
-      {
-        url: "/project2/concept/cimg9.png",
-        caption: "Concept Sketch 9",
-      },
-      {
-        url: "/project2/concept/cimg10.png",
-        caption: "Concept Sketch 10",
-      },
-    ],
+    PianoUnlock: {
+      detailedWriteup: [
+        "In envisioning the Piano Unlock Interface, our aim was to harmonize the elegance of music with the sophistication of security. The concept sprung from the idea of transforming the mundane task of unlocking a phone into a musical journey, engaging both auditory and visual senses. To achieve this, we meticulously crafted a mobile UI that replicated the aesthetic of a traditional piano, adorning the screen with black and white keys that echoed the instrument’s classic design. Each key was not just a visual element; it was an interactive component, producing corresponding notes and melodies as users pressed them. This auditory feedback not only made the interface more interactive but also provided users with a delightful sensory experience, turning unlocking a phone into a symphonic adventure.",
+        "Throughout the development of the Piano Unlock Interface, I played a pivotal role in bringing our visionary concept to life by contributing to coding and rigorous testing. This phase of the project was a bridge that connected our imaginative design with the practical, functional reality.",
+      ],
+      detailedPoints: [
+        {
+          point:
+            "Replicate the look of a traditional piano using black and white keys on a mobile UI.",
+        },
+        {
+          point:
+            "Add the corresponding notes/sounds for each key so that it is played whenever the keys are pressed. This will engage the user’s auditory senses and make the UI more interactive.",
+        },
+        {
+          point:
+            "Add customization options. One way to do this is by allowing the user to customize the look of the piano by giving them a selection of different color schemes and themes to choose from.",
+        },
+        {
+          point:
+            "Label the piano keys so that users who are not familiar with the instrument are still able to visually identify which keys represent each note. This can also help users who have never played the piano before learn which piano keys play what sound!",
+        },
+        {
+          point:
+            "Provide feedback to the user whenever a piano key is pressed in order to help them keep track of which notes have already been played, and to help them identify any errors.",
+        },
+        {
+          point:
+            "Add a functionality that would allow users to set their own unique tunes for unlocking their phone. This can be done by adding a “SET” button on the starting screen.",
+        },
+        {
+          point:
+            "Show clear instructions to the user on how to set their own tunes/PIN code for unlocking their phone. See picture for further reference regarding this interaction.",
+        },
+        {
+          point:
+            "After they have set up their PIN, users can unlock their phones by pressing the correct sequence of piano keys to play the tune they have set, and pressing a button to enter it as the code.",
+        },
+        {
+          point:
+            "Provide feedback to the user using an animation to show that the phone was successfully unlocked.",
+        },
+        {
+          point:
+            "Display an error message if the wrong sequence of keys are played. This is to provide feedback to the user, and ask them to try again",
+        },
+      ],
+      detailedImages: [
+        {
+          url: "/project2/PianoUnlock/detailed/dimg1.png",
+          caption: "Detailed Sketch 1",
+        },
+        {
+          url: "/project2/PianoUnlock/detailed/dimg2.png",
+          caption: "Detailed Sketch 2",
+        },
+        {
+          url: "/project2/PianoUnlock/detailed/dimg3.png",
+          caption: "Detailed Sketch 3",
+        },
+        {
+          url: "/project2/PianoUnlock/detailed/dimg4.png",
+          caption: "Detailed Sketch 4",
+        },
+        {
+          url: "/project2/PianoUnlock/detailed/dimg5.png",
+          caption: "Detailed Sketch 5",
+        },
+        {
+          url: "/project2/PianoUnlock/detailed/dimg6.png",
+          caption: "Detailed Sketch 6",
+        },
+        {
+          url: "/project2/PianoUnlock/detailed/dimg7.png",
+          caption: "Detailed Sketch 7",
+        },
+        {
+          url: "/project2/PianoUnlock/detailed/dimg8.png",
+          caption: "Detailed Sketch 8",
+        },
+        {
+          url: "/project2/PianoUnlock/detailed/dimg9.png",
+          caption: "Detailed Sketch 9",
+        },
+        {
+          url: "/project2/PianoUnlock/detailed/dimg10.png",
+          caption: "Detailed Sketch 10",
+        },
+      ],
+      conceptWriteup: [
+        "Throughout the ideation and conceptualization process, my focus was on innovation, usability, and security. Each idea underwent rigorous scrutiny, with a keen eye on user experience and feasibility. Collaborative brainstorming sessions allowed me to refine these concepts, incorporating valuable input from team members and aligning the ideas with the project's objectives. Ultimately, the diverse interfaces – ranging from gamified interactions to intricate Morse code patterns and draggable mazes – showcased the depth of our creative exploration and commitment to crafting interfaces that captivated users while ensuring the utmost security and ease of use.",
+      ],
+      conceptPoints: [
+        {
+          point:
+            "Enter a reason for unlocking the device. Reasons are tracked to understand user behaviour and minimize distractions.",
+        },
+        {
+          point: "Play a sequence of piano keys.",
+        },
+        {
+          point: "Arrange shapes in a speciific order.",
+        },
+        {
+          point: "Draw pattern on a grid.",
+        },
+        {
+          point: "Move a character to a flag using a d-pad and jump button. ",
+        },
+        {
+          point: "Move obejct through maze by dragging it",
+        },
+        {
+          point:
+            "Enter a morse code sequence by pressing and holding a button.",
+        },
+        {
+          point: "Swipe a panel up to a specific y-coordinate.",
+        },
+        {
+          point: "Enter a lock combinaiton.",
+        },
+        {
+          point:
+            "Use finger to place fingerprints in a specific order/sequence.",
+        },
+      ],
+      conceptImages: [
+        {
+          url: "/project2/PianoUnlock/concept/cimg1.png",
+          caption: "Concept Sketch 1",
+        },
+        {
+          url: "/project2/PianoUnlock/concept/cimg2.png",
+          caption: "Concept Sketch 2",
+        },
+        {
+          url: "/project2/PianoUnlock/concept/cimg3.png",
+          caption: "Concept Sketch 3",
+        },
+        {
+          url: "/project2/PianoUnlock/concept/cimg4.png",
+          caption: "Concept Sketch 4",
+        },
+        {
+          url: "/project2/PianoUnlock/concept/cimg5.png",
+          caption: "Concept Sketch 5",
+        },
+        {
+          url: "/project2/PianoUnlock/concept/cimg6.png",
+          caption: "Concept Sketch 6",
+        },
+        {
+          url: "/project2/PianoUnlock/concept/cimg7.png",
+          caption: "Concept Sketch 7",
+        },
+        {
+          url: "/project2/PianoUnlock/concept/cimg8.png",
+          caption: "Concept Sketch 8",
+        },
+        {
+          url: "/project2/PianoUnlock/concept/cimg9.png",
+          caption: "Concept Sketch 9",
+        },
+        {
+          url: "/project2/PianoUnlock/concept/cimg10.png",
+          caption: "Concept Sketch 10",
+        },
+      ],
+    },
+    CokeMachineUnlock: {
+      detailedWriteup: [
+        "Our ideation phase for the Coke machine unlock interface was a whirlwind of creativity and exploration. The brainstorming sessions were vibrant with ideas as we envisioned scenarios where users could unlock the Coke machine through interactions involving multiple steps, or even mimicking the act of shaking a pop can. Each brainstorming session was a melting pot of diverse perspectives, where team members passionately advocated for their concepts. We embarked on a quest to find the perfect balance between security and user experience, aiming not just for a functional interface but one that would engage and delight users.",
+        "During the development phase, my involvement was instrumental in prototyping different sensor-based interactions. I actively engaged in coding and testing functionalities. Iterative testing was crucial; we fine-tuned the sensitivity of the sensors, ensuring the interface responded accurately to user inputs. Through extensive trial and error, we perfected the interface's responsiveness, guaranteeing a smooth user experience.",
+      ],
+      detailedPoints: [
+        {
+          point:
+            "A phone unlock method using mainly sensor-based unlocking to unlock the phone. The initial screen shows a vending machine with a variety of different pop cans. We chose this idea because of the novelty behind the idea. The inspiration in coming with this idea was during a group meeting while one of our group members was looking at a vending machine. ",
+        },
+        {
+          point:
+            "When clicking one of the pops in the vending machine, it brings it foreword displaying a larger version of the pop.",
+        },
+        {
+          point:
+            "A different variation of sketch 2 that we thought of to bring the pop foreword was to enter the code of the associated pop. This would emulate a real vending machine interaction but sketch 2 seems more promising because it seems like a more user-friendly interaction because if the user spends too long on the lock screen, it can become frustrating for the user.",
+        },
+        {
+          point:
+            "Once a pop selection comes forward, the user must shake the phone to make the pop fizz so it can be noted down as a selection. We thought this would be a fun interaction for the user. Also, it is able to utilize the accelerometer on a phone.",
+        },
+        {
+          point:
+            "After a pop has been shaken enough for it to fizz out, this will be noted down in the selection. The pop will be placed in the vendor dispenser just like a real vending machine. ",
+        },
+        {
+          point:
+            "When the correct selection of pop is shaken and vended out the phone will unlock. This form of unlocking will be relatively secure because if someone were to steal a user’s phone. All they will see Is a screen with vending machine and not know what exactly to do. ",
+        },
+        {
+          point:
+            "If an incorrect selection of pop is vended then an ‘X’ is displayed to the screen indicating that the phone will not unlock. This adds the ‘secure’ aspect to the phone lock.",
+        },
+        {
+          point:
+            "To ensure this phone lock cannot be brute forced, there will be a limit on how many attempts someone can try. Once a user has used up all their attempts, the vending machine will be out of order for a period of time.",
+        },
+        {
+          point:
+            "Another optional feature that could be added is a ‘use passcode’ button which will enable users to use a passcode rather than having to go through the process of shaking cans. This also ensures users will be able to get into their phone in case they forgot their pop selection.",
+        },
+        {
+          point:
+            "An alternative to individually choosing and shaking a can to vend is selecting and vending all pops at once and having to shake once. This implementation would save users time as well as physical exertion. ",
+        },
+      ],
+      detailedImages: [
+        {
+          url: "/project2/CokeMachineUnlock/detailed/dimg1.png",
+          caption: "Detailed Sketch 1",
+        },
+        {
+          url: "/project2/CokeMachineUnlock/detailed/dimg2.png",
+          caption: "Detailed Sketch 2",
+        },
+        {
+          url: "/project2/CokeMachineUnlock/detailed/dimg3.png",
+          caption: "Detailed Sketch 3",
+        },
+        {
+          url: "/project2/CokeMachineUnlock/detailed/dimg4.png",
+          caption: "Detailed Sketch 4",
+        },
+        {
+          url: "/project2/CokeMachineUnlock/detailed/dimg5.png",
+          caption: "Detailed Sketch 5",
+        },
+        {
+          url: "/project2/CokeMachineUnlock/detailed/dimg6.png",
+          caption: "Detailed Sketch 6",
+        },
+        {
+          url: "/project2/CokeMachineUnlock/detailed/dimg7.png",
+          caption: "Detailed Sketch 7",
+        },
+        {
+          url: "/project2/CokeMachineUnlock/detailed/dimg8.png",
+          caption: "Detailed Sketch 8",
+        },
+        {
+          url: "/project2/CokeMachineUnlock/detailed/dimg9.png",
+          caption: "Detailed Sketch 9",
+        },
+        {
+          url: "/project2/CokeMachineUnlock/detailed/dimg10.png",
+          caption: "Detailed Sketch 10",
+        },
+      ],
+      conceptWriteup: [
+        "Our team embarked on a mission to redefine user interaction, blending cutting-edge technology with user-friendly experiences. One of the core concepts we embraced was the fusion of security with seamless, intuitive gestures, ensuring a delightful user experience. I actively contributed to brainstorming sessions where we explored various creative avenues. Inspired by the fusion of technology and human gestures, we envisioned an interface that transcended conventional boundaries. The idea of using diverse sensor inputs, such as the device gyroscope and accelerometer, captured our imagination. I played a vital role in refining these ideas and ensuring they seamlessly integrated into the overall concept of a unique sensor based unlock interface.",
+      ],
+      conceptPoints: [
+        {
+          point: "Flick forward to unlock.",
+        },
+        {
+          point: "Scan QR code stored on personal computer.",
+        },
+        {
+          point: "Using voice detection, a user speaks a specific phrase.",
+        },
+        {
+          point:
+            "Using the camera, a user records a morris code sequence by blinking.",
+        },
+        {
+          point:
+            "Unlocking achieved by being in proximity to another personal device such as a laptop.",
+        },
+        {
+          point: "Hand gesture recognition.",
+        },
+        {
+          point: "User tilts their phone simulating pouring a glass of milk.",
+        },
+        {
+          point: "User tilts their phone to move an object through a maze.",
+        },
+        {
+          point:
+            "User sings a song and the interface captures the input using sound recognition.",
+        },
+        {
+          point:
+            "User interacts with a virtual vending machine and shakes their phone to fizz out pop cans.",
+        },
+      ],
+      conceptImages: [
+        {
+          url: "/project2/CokeMachineUnlock/concept/cimg1.png",
+          caption: "Concept Sketch 1",
+        },
+        {
+          url: "/project2/CokeMachineUnlock/concept/cimg2.png",
+          caption: "Concept Sketch 2",
+        },
+        {
+          url: "/project2/CokeMachineUnlock/concept/cimg3.png",
+          caption: "Concept Sketch 3",
+        },
+        {
+          url: "/project2/CokeMachineUnlock/concept/cimg4.png",
+          caption: "Concept Sketch 4",
+        },
+        {
+          url: "/project2/CokeMachineUnlock/concept/cimg5.png",
+          caption: "Concept Sketch 5",
+        },
+        {
+          url: "/project2/CokeMachineUnlock/concept/cimg6.png",
+          caption: "Concept Sketch 6",
+        },
+        {
+          url: "/project2/CokeMachineUnlock/concept/cimg7.png",
+          caption: "Concept Sketch 7",
+        },
+        {
+          url: "/project2/CokeMachineUnlock/concept/cimg8.png",
+          caption: "Concept Sketch 8",
+        },
+        {
+          url: "/project2/CokeMachineUnlock/concept/cimg9.png",
+          caption: "Concept Sketch 9",
+        },
+        {
+          url: "/project2/CokeMachineUnlock/concept/cimg10.png",
+          caption: "Concept Sketch 10",
+        },
+      ],
+    },
   },
 ];
