@@ -67,8 +67,10 @@ function App(props) {
       </div>
       {logoLoaded && <img src={logo} alt={app.name} />}
       <p>{app.description}</p>
-      {img1Loaded && <img src={img1} alt={app.name} className="app-img" />}
-      {img2Loaded && <img src={img2} alt={app.name} className="app-img" />}
+      <div className="app-img-container">
+        {img1Loaded && <img src={img1} alt={app.name} className="app-img" />}
+        {img2Loaded && <img src={img2} alt={app.name} className="app-img" />}
+      </div>
     </div>
   );
 }
