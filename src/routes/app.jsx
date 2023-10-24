@@ -16,6 +16,8 @@ function App(props) {
   };
 
   const [logoLoaded, setLogoLoaded] = useState(false);
+  const [img1Loaded, setImg1Loaded] = useState(false);
+  const [img2Loaded, setImg2Loaded] = useState(false);
 
   const app = appData.find((item) => item.name == props.name);
   const logo = `/${props.name}/logo.png`;
@@ -23,12 +25,24 @@ function App(props) {
   const img2 = `/${props.name}/img2.png`;
 
   useEffect(() => {
-    const image = new Image();
-    image.onload = () => {
+    const logoImage = new Image();
+    logoImage.onload = () => {
       setLogoLoaded(true);
     };
-    image.src = logo;
-  }, [logo]);
+    logoImage.src = logo;
+
+    const img1Image = new Image();
+    img1Image.onload = () => {
+      setImg1Loaded(true);
+    };
+    img1Image.src = img1;
+
+    const img2Image = new Image();
+    img2Image.onload = () => {
+      setImg2Loaded(true);
+    };
+    img2Image.src = img2;
+  }, [logo, img1, img2]);
 
   return (
     <div>
@@ -53,8 +67,8 @@ function App(props) {
       </div>
       {logoLoaded && <img src={logo} alt={app.name} />}
       <p>{app.description}</p>
-      <img src={img1} alt={app.name} className="app-img" />
-      <img src={img2} alt={app.name} className="app-img" />
+      {img1Loaded && <img src={img1} alt={app.name} className="app-img" />}
+      {img2Loaded && <img src={img2} alt={app.name} className="app-img" />}
     </div>
   );
 }
