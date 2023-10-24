@@ -115,9 +115,22 @@
   gap: 5px;
 }
 
+.app-img {
+  width: auto;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
 @media (max-width: 800px) {
   .skip {
     display: none;
+  }
+  .app-img {
+    height: auto;
   }
 }
 

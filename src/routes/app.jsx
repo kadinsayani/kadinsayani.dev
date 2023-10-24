@@ -15,6 +15,9 @@ function App(props) {
   };
 
   const app = appData.find((item) => item.name == props.name);
+  const logo = `/${props.name}/logo.png`;
+  const img1 = `/${props.name}/img1.png`;
+  const img2 = `/${props.name}/img2.png`;
 
   return (
     <div>
@@ -37,7 +40,10 @@ function App(props) {
           </a>
         )}
       </div>
+      <img src={logo} alt={app.name} />
       <p>{app.description}</p>
+      <img src={img1} alt={app.name} className="app-img" />
+      <img src={img2} alt={app.name} className="app-img" />
     </div>
   );
 }
