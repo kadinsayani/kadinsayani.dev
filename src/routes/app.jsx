@@ -7,6 +7,7 @@ import { IoLogoGithub } from "react-icons/io5";
 import { IoLink } from "react-icons/io5";
 import ScrollToTop from "../components/scrollToTop.jsx";
 import { GrAppleAppStore } from "react-icons/gr";
+import { useEffect, useState } from "react";
 
 function App(props) {
   const navigate = useNavigate();
@@ -14,10 +15,20 @@ function App(props) {
     navigate(-1);
   };
 
+  const [logoLoaded, setLogoLoaded] = useState(false);
+
   const app = appData.find((item) => item.name == props.name);
   const logo = `/${props.name}/logo.png`;
   const img1 = `/${props.name}/img1.png`;
   const img2 = `/${props.name}/img2.png`;
+
+  useEffect(() => {
+    const image = new Image();
+    image.onload = () => {
+      setLogoLoaded(true);
+    };
+    image.src = logo;
+  }, [logo]);
 
   return (
     <div>
@@ -40,7 +51,7 @@ function App(props) {
           </a>
         )}
       </div>
-      <img src={logo} alt={app.name} />
+      {logoLoaded && <img src={logo} alt={app.name} />}
       <p>{app.description}</p>
       <img src={img1} alt={app.name} className="app-img" />
       <img src={img2} alt={app.name} className="app-img" />
