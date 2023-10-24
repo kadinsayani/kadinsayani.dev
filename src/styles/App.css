@@ -125,24 +125,13 @@
   margin-left: 20px;
 }
 
-.app-img-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 @media (max-width: 800px) {
   .skip {
     display: none;
   }
   .app-img {
-    width: 300px;
+    width: 250px;
     height: auto;
-  }
-  .app-img-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 }
 
