@@ -130,7 +130,8 @@
     display: none;
   }
   .app-img {
-    height: auto;
+    width: auto;
+    height: 200px;
   }
 }
 
