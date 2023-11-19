@@ -9,6 +9,7 @@ import Project2 from "./routes/project2.jsx";
 import App from "./routes/app.jsx";
 import PrivacyPolicy from "./routes/privacy-policy.jsx";
 import Support from "./routes/support.jsx";
+import Project3 from "./routes/project3.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
   {
     path: "/projects/unlockinterfaces",
     element: <Project2 name={"Unlock Interfaces"} />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/projects/petpal",
+    element: <Project3 name={"PetPal"} />,
     errorElement: <ErrorPage />,
   },
   {

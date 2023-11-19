@@ -59,6 +59,181 @@ This Privacy Policy was last updated on 10/05/2023.`,
 
 export const projectData = [
   {
+    name: "PetPal",
+    project: "CPSC 581 Project 3",
+    page: "/projects/petpal",
+    repo: "https://github.com/kadinsayani/PetPal",
+    link: "https://github.com/kadinsayani/PetPal",
+    img: "/project3/img.png",
+    description:
+      "PetPal is an automatic pet feeder powered by an arduino integrated circuit.",
+    detailedWriteup: [
+      "Throughout the prototyping and development phase, my role included integrating the circuit and developing the arduino sketch.",
+    ],
+    detailedPoints: [
+      {
+        point:
+          "A variation that dispenses food when triggered by button press.",
+      },
+      {
+        point:
+          "A vartiation where the user programs both the time and amount of food to dispense.",
+      },
+      {
+        point: "A detail where the user programs the time to dispense food.",
+      },
+      {
+        point: "A variation where the food is dispensed at sunrise, or sunset.",
+      },
+      {
+        point:
+          "A variation where the food is dispensed when pet starts barking.",
+      },
+      {
+        point:
+          "A variation where the user programs teh tiem to dispense food, but food will also be dispensed at sunrise or sunset as a fallback.",
+      },
+      {
+        point:
+          "A variation where food is dispensed based on the current weight (quantity) of food already dispensed.",
+      },
+      {
+        point:
+          "A detail showcasing the timer resetting after food has been dispensed.",
+      },
+      {
+        point:
+          "A variation inlcuding an LCD display that informs the user when their pet was fed.",
+      },
+      {
+        point: "A variation that includes a start button to reset the timer.",
+      },
+    ],
+    detailedImages: [
+      {
+        url: "/project3/detailed/dimg1.png",
+        caption: "Detailed Sketch 1",
+      },
+      {
+        url: "/project3/detailed/dimg2.png",
+        caption: "Detailed Sketch 2",
+      },
+      {
+        url: "/project3/detailed/dimg3.png",
+        caption: "Detailed Sketch 3",
+      },
+      {
+        url: "/project3/detailed/dimg4.png",
+        caption: "Detailed Sketch 4",
+      },
+      {
+        url: "/project3/detailed/dimg5.png",
+        caption: "Detailed Sketch 5",
+      },
+      {
+        url: "/project3/detailed/dimg6.png",
+        caption: "Detailed Sketch 6",
+      },
+      {
+        url: "/project3/detailed/dimg7.png",
+        caption: "Detailed Sketch 7",
+      },
+      {
+        url: "/project3/detailed/dimg8.png",
+        caption: "Detailed Sketch 8",
+      },
+      {
+        url: "/project3/detailed/dimg9.png",
+        caption: "Detailed Sketch 9",
+      },
+      {
+        url: "/project3/detailed/dimg10.png",
+        caption: "Detailed Sketch 10",
+      },
+    ],
+    conceptWriteup: [
+      "While ideating and developing our concept, my role included developing concept sketches, participating in group discussions, and filming/editing the concept video.",
+    ],
+    conceptPoints: [
+      {
+        point:
+          "Plant watering device that waters plants when triggered by sunrise.",
+      },
+      {
+        point: "Thermostat.",
+      },
+      {
+        point: "Automatic night light.",
+      },
+      {
+        point: "Smoke/Fire detector",
+      },
+      {
+        point: "Guitar tuner.",
+      },
+      {
+        point:
+          "Meditation companion that inlcudes an LCD with guided breathing exercises, and a pulse (heart rate) sensor.",
+      },
+      {
+        point:
+          "Room entry alert device that alerts users when someone enters the room.",
+      },
+      {
+        point:
+          "Plant monitoring device that displays metrics such as temperature and moisture.",
+      },
+      {
+        point: "Door lock triggered by clapping your hands.",
+      },
+      {
+        point: "Automatic and programmable pet feeder.",
+      },
+    ],
+    conceptImages: [
+      {
+        url: "/project3/concept/cimg1.png",
+        caption: "Concept Sketch 1",
+      },
+      {
+        url: "/project3/concept/cimg2.png",
+        caption: "Concept Sketch 2",
+      },
+      {
+        url: "/project3/concept/cimg3.png",
+        caption: "Concept Sketch 3",
+      },
+      {
+        url: "/project3/concept/cimg4.png",
+        caption: "Concept Sketch 4",
+      },
+      {
+        url: "/project3/concept/cimg5.png",
+        caption: "Concept Sketch 5",
+      },
+      {
+        url: "/project3/concept/cimg6.png",
+        caption: "Concept Sketch 6",
+      },
+      {
+        url: "/project3/concept/cimg7.png",
+        caption: "Concept Sketch 7",
+      },
+      {
+        url: "/project3/concept/cimg8.png",
+        caption: "Concept Sketch 8",
+      },
+      {
+        url: "/project3/concept/cimg9.png",
+        caption: "Concept Sketch 9",
+      },
+      {
+        url: "/project3/concept/cimg10.png",
+        caption: "Concept Sketch 10",
+      },
+    ],
+  },
+  {
     name: "virtual-forest",
     project: "CPSC 581 Project 1",
     page: "/projects/virtual-forest",
