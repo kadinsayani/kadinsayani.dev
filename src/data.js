@@ -66,9 +66,9 @@ export const projectData = [
     link: "https://github.com/kadinsayani/PetPal",
     img: "/project3/img.png",
     description:
-      "PetPal is an automatic pet feeder powered by an arduino integrated circuit.",
+      "PetPal is an automatic pet feeder powered by an arduino integrated circuit. The device has a remote for programming the time for when you would like the food to be dispensed. It uses an infrared sensor to detect input from the infrared remote and a DS1307 real time clock (for tracking time) as an input device. It uses a micro servo motor as an output device. To make it fun, we shaped the pet feeder to look like a basketball hoop with a spout attached at the bottom, that is opened and closed by the motor. The spout opens exactly at the real time inputted into the remote and closes after the food is dispensed. There is also a compartment at the back of the device that can be used to store your supply of pet food. ",
     detailedWriteup: [
-      "Throughout the prototyping and development phase, my role included integrating the circuit and developing the arduino sketch.",
+      "Throughout the prototyping and development phase, my role included integrating the circuit and developing the program for the arduino to run.",
     ],
     detailedPoints: [
       {

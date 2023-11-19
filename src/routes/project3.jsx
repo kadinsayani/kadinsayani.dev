@@ -74,9 +74,9 @@ function Project3(props) {
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/19pYyHMV0e8?si=QKF4ZsyqyruV9cjB"
+              src="https://www.youtube.com/embed/tHWpM64G8rM?si=dW8zJPU3sebnSF_K"
               title="YouTube video player"
-              frameBorder="0"
+              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
