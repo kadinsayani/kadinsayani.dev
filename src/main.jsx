@@ -10,6 +10,8 @@ import App from "./routes/app.jsx";
 import PrivacyPolicy from "./routes/privacy-policy.jsx";
 import Support from "./routes/support.jsx";
 import Project3 from "./routes/project3.jsx";
+import Post from "./routes/post.jsx";
+import Blog from "./routes/blog.jsx";
 
 const router = createBrowserRouter([
   {
@@ -60,6 +62,16 @@ const router = createBrowserRouter([
   {
     path: "/apps/kanbo/support",
     element: <Support name={"Kanbo"} />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/blog",
+    element: <Blog />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/blog/:postId",
+    element: <Post />,
     errorElement: <ErrorPage />,
   },
 ]);
