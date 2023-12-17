@@ -16,9 +16,7 @@ function Me() {
           1000,
           "> Systems",
           1000,
-          "> iOS",
-          1000,
-          "> macOS",
+          "> Mobile",
           1000,
         ]}
         speed={50}

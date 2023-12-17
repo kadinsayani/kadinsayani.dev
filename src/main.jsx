@@ -10,6 +10,7 @@ import App from "./routes/app.jsx";
 import PrivacyPolicy from "./routes/privacy-policy.jsx";
 import Support from "./routes/support.jsx";
 import Project3 from "./routes/project3.jsx";
+import Project4 from "./routes/project4.jsx";
 import Post from "./routes/post.jsx";
 import Blog from "./routes/blog.jsx";
 
@@ -32,6 +33,11 @@ const router = createBrowserRouter([
   {
     path: "/projects/petpal",
     element: <Project3 name={"PetPal"} />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/projects/vrmeet",
+    element: <Project4 name={"VRMeet"} />,
     errorElement: <ErrorPage />,
   },
   {

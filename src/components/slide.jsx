@@ -21,8 +21,8 @@ const Slide = ({ images }) => {
   const buttonStyle = {
     padding: "10px 20px",
     margin: "10px",
-    backgroundColor: "#32c5ff",
-    color: "#b620e0",
+    backgroundColor: "#151515",
+    color: "#edf5fc",
     border: "none",
     cursor: "pointer",
   };
@@ -35,7 +35,7 @@ const Slide = ({ images }) => {
       <img
         src={images[currentIndex].url}
         alt={`Slide ${currentIndex}`}
-        style={{ width: "600px", height: "400px" }}
+        style={{ width: "600px", height: "400px", borderRadius: "10px" }}
       />
       <button onClick={nextSlide} style={buttonStyle}>
         <IoArrowForward />

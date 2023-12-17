@@ -6,6 +6,8 @@ author: Kadin Sayani
 pubDate: 2023-12-14
 ---
 
+*draft*
+
 As I continue my quest across the vast Rust landscape, pursuing the knowledge of a rockstar systems developer, I ponder the thought of writing my own Unix shell. In this blog post, I'll walk you through the steps involved with writing a shell program in Rust! We'll cover the basics of a shell, as well as add support for customizing the prompt by editing a TOML config file.
 
 ## What is a shell?

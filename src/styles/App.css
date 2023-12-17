@@ -157,3 +157,7 @@
   top: 20px;
   right: 20px;
 }
+
+img {
+  border-radius: 10px;
+}
