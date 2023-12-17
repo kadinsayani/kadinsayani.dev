@@ -6,8 +6,6 @@ author: Kadin Sayani
 pubDate: 2023-12-14
 ---
 
-*work in progress*
-
 Embarking on a journey through the expansive terrain of Rust, I find myself driven by the ambition to acquire the prowess of a seasoned systems developer. One intriguing idea that crossed my mind was to create my own Unix shell. In this blog post, I'll guide you through the process of crafting a shell program using Rust, a powerful systems programming language!
 
 ## What is a shell?
