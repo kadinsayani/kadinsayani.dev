@@ -20,7 +20,7 @@ function Project3(props) {
     <div>
       <ScrollToTop />
       <button onClick={back} className="back-button">
-        <IoArrowBack size={40} color={"#ffffffde"} />
+        <IoArrowBack size={40} color={"#edf5fc"} />
       </button>
       <div className="project-item-container">
         <h1>{project.name}</h1>

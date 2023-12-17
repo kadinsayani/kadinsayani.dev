@@ -1,7 +1,7 @@
 ---
 title: "Building a Shell in Rust"
 id: "building-a-shell-in-rust"
-description: "Building a Unix-like shell in Rust."
+description: "A beginner friendly read on building a Unix-like shell in Rust. Includes a discussion on Rust error handling, pattern matching, and processes."
 author: Kadin Sayani
 pubDate: 2023-12-14
 ---
@@ -10,7 +10,7 @@ Embarking on a journey through the expansive terrain of Rust, I find myself driv
 
 ## What is a shell?
 
-A Unix Shell is a program that provides a command-line interface (CLI) for Unix-like operating systems. Users can enter text commands which execute programs and display their output. The shell interprets these commands and communicates with the operating system to execute them, acting as a bridge between the user and the system. It's a powerful tool, allowing users to manipulate files, run scripts, and perform complex tasks with just a few keystrokes.
+A Unix shell is a program that provides a command-line interface (CLI) for Unix-like operating systems. Users can enter text commands which execute programs and display their output. The shell interprets these commands and communicates with the operating system to execute them, acting as a bridge between the user and the system. It's a powerful tool, allowing users to manipulate files, run scripts, and perform complex tasks with just a few keystrokes.
 
 ## How does a shell work?
 
@@ -21,7 +21,7 @@ A Unix Shell is a program that provides a command-line interface (CLI) for Unix-
 3. Command Execution and Process Creation
 - The shell locates the executable file associated with the command, and creates a new process to execute the command. The new process is a child of the shell process.
 
-Of course, modern shells include more features such as shell scripting, I/O redirection (redirecting input/output or pipes), job control, etc. For the purpose of this blog, we'll just focus on executing commands.
+Of course, modern shells include more features such as shell scripting, I/O redirection (redirecting input/output or pipes), job control, etc. For the purposes of this blog, we'll just focus on executing commands.
 
 ## Prerequisites
 

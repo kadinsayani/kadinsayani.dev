@@ -62,7 +62,7 @@
 .app-item {
   display: grid;
   grid-template-rows: auto auto;
-  border: #ffffffde;
+  border: #edf5fc;
   border-radius: 20px;
   gap: 10px;
   padding: 10px;
@@ -84,7 +84,7 @@
 .project-item {
   display: grid;
   grid-template-rows: auto auto;
-  border: #ffffffde;
+  border: #edf5fc;
   border-radius: 20px;
   gap: 10px;
   padding: 10px;
