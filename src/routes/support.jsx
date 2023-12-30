@@ -1,8 +1,8 @@
-import { appData } from "../data";
 import { PropTypes } from "prop-types";
+import "./App.css";
 // import ReactMarkdown from "react-markdown";
 
-function Support(props) {
+function Support() {
   //   const app = appData.find((item) => item.name == props.name);
   return (
     <div>

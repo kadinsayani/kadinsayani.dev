@@ -1,23 +1,15 @@
-import "../styles/App.css";
-import Me from "../components/me";
-import Apps from "../components/apps";
-import Projects from "../components/projects";
-import Header from "../components/header";
-import ScrollToTop from "../components/scrollToTop";
+import "./App.css";
+import Navbar from "../components/navbar";
+import { Outlet, ScrollRestoration } from "react-router-dom";
 
-function Root() {
+export default function Root() {
   return (
     <div>
-      <ScrollToTop />
+      <ScrollRestoration />
       <div>
-        <Header />
-        <Me />
-        <Apps />
-        <Projects />
-        <p>Kadin Sayani © 2023</p>
+        <Navbar />
+        <Outlet />
       </div>
     </div>
   );
 }
-
-export default Root;
