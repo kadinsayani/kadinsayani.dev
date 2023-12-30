@@ -48,7 +48,7 @@ function App(props) {
     <div>
       <ScrollToTop />
       <button onClick={back} className="back-button">
-        <IoArrowBack size={40} color={"#ffffffde"} />
+        <IoArrowBack size={40} color={"#edf5fc"} />
       </button>
       <h1>{app.name}</h1>
       <div className="contact">

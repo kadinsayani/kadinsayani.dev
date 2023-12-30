@@ -30,7 +30,7 @@ function Post() {
     <div>
       <ScrollToTop />
       <button onClick={back} className="back-button">
-        <IoArrowBack size={40} color={"#ffffffde"} />
+        <IoArrowBack size={40} color={"#edf5fc"} />
       </button>
       <div className="post">
         <h1 className={styles.title}>{title}</h1>
