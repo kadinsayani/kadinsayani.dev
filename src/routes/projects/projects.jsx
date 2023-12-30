@@ -1,12 +1,10 @@
-import { appData } from "../data";
+import { appData } from "../../data";
 import { IoLogoGithub } from "react-icons/io5";
-import "../styles/App.css";
 import { Link } from "react-router-dom";
 
-function Apps() {
+export default function Projects() {
   return (
     <>
-      <h2>Apps</h2>
       <div className="app-container">
         {appData.map((data, key) => {
           return (
@@ -26,5 +24,3 @@ function Apps() {
     </>
   );
 }
-
-export default Apps;

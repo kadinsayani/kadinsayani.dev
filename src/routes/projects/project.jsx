@@ -1,20 +1,12 @@
-import { useNavigate } from "react-router-dom";
-import { appData } from "../data";
-import "../styles/App.css";
+import { appData } from "../../data";
+import "../App.css";
 import { PropTypes } from "prop-types";
-import { IoArrowBack } from "react-icons/io5";
 import { IoLogoGithub } from "react-icons/io5";
 import { IoLink } from "react-icons/io5";
-import ScrollToTop from "../components/scrollToTop.jsx";
 import { GrAppleAppStore } from "react-icons/gr";
 import { useEffect, useState } from "react";
 
-function App(props) {
-  const navigate = useNavigate();
-  const back = () => {
-    navigate(-1);
-  };
-
+export default function Project(props) {
   const [logoLoaded, setLogoLoaded] = useState(false);
   const [img1Loaded, setImg1Loaded] = useState(false);
   const [img2Loaded, setImg2Loaded] = useState(false);
@@ -46,10 +38,6 @@ function App(props) {
 
   return (
     <div>
-      <ScrollToTop />
-      <button onClick={back} className="back-button">
-        <IoArrowBack size={40} color={"#edf5fc"} />
-      </button>
       <h1>{app.name}</h1>
       <div className="contact">
         <a href={app.repo}>
@@ -73,8 +61,6 @@ function App(props) {
   );
 }
 
-App.propTypes = {
+Project.propTypes = {
   name: PropTypes.string,
 };
-
-export default App;

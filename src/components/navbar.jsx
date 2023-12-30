@@ -1,29 +1,22 @@
-import "../styles/App.css";
 import { IoLogoGithub } from "react-icons/io5";
 import { IoMail } from "react-icons/io5";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import me from "../assets/memoji.png";
 
-function Navbar() {
+export default function Navbar() {
   return (
-    <div>
-      <div className="socials">
-        <a href="mailto:me@kadinsayani.dev">
-          <IoMail size={20} />
-        </a>
-        <a href="https://www.linkedin.com/in/kadinsayani">
-          <IoLogoLinkedin size={20} />
-        </a>
-        <a href="https://www.github.com/kadinsayani">
-          <IoLogoGithub size={20} />
-        </a>
+    <div className="navbar">
+      <div className="me">
+        <img className="me-img" src={me} alt="Kadin Sayani" />
+        <h2>Kadin Sayani</h2>
       </div>
-      <h1>Kadin Sayani</h1>
-      <Link to="/blog" className="blog-link">
-        Blog
-      </Link>
+      <div className="nav-links">
+        <Link to="/">/home</Link>
+        <Link to="/projects">/projects</Link>
+        <Link to="/blog">/blog</Link>
+        <Link to="/contact">/contact</Link>
+      </div>
     </div>
   );
 }
-
-export default Navbar;

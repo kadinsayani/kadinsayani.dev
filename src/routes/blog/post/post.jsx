@@ -1,19 +1,14 @@
 import ReactMarkdown from "react-markdown";
 import { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
-import ScrollToTop from "../components/scrollToTop";
-import styles from "../styles/markdown-styles.module.css";
-import { IoArrowBack } from "react-icons/io5";
+import { useParams } from "react-router-dom";
+import "../../App.css";
+import Navbar from "../../../components/navbar";
 
 function Post() {
   const [content, setContent] = useState("");
   const { postId } = useParams();
   const [title, setTitle] = useState("");
   const [date, setDate] = useState("");
-  const navigate = useNavigate();
-  const back = () => {
-    navigate(-1);
-  };
 
   useEffect(() => {
     fetch(`/posts/${postId}.md`)
@@ -28,16 +23,12 @@ function Post() {
 
   return (
     <div>
-      <ScrollToTop />
-      <button onClick={back} className="back-button">
-        <IoArrowBack size={40} color={"#edf5fc"} />
-      </button>
-      <div className="post">
-        <h1 className={styles.title}>{title}</h1>
-        <h1 className={styles.date}>{date}</h1>
-        <ReactMarkdown className={styles.reactMarkdown}>
-          {content}
-        </ReactMarkdown>
+      <div className="post-container">
+        <div className="post">
+          <h1 className="title">{title}</h1>
+          <h1 className="date">{date}</h1>
+          <ReactMarkdown className="react-markdown">{content}</ReactMarkdown>
+        </div>
       </div>
     </div>
   );

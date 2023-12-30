@@ -1,11 +1,8 @@
 import { TypeAnimation } from "react-type-animation";
-import "../styles/App.css";
-import me from "../assets/memoji.png";
 
-function Me() {
+function Typing() {
   return (
     <div>
-      <img className="me-img" src={me} width="200" height="200" />
       <TypeAnimation
         sequence={[
           "> _",
@@ -27,4 +24,4 @@ function Me() {
   );
 }
 
-export default Me;
+export default Typing;

@@ -4,62 +4,75 @@ import Root from "./routes/root.jsx";
 import ErrorPage from "./routes/error-page.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "./routes/app.jsx";
+import Project from "./routes/projects/project.jsx";
 import PrivacyPolicy from "./routes/privacy-policy.jsx";
 import Support from "./routes/support.jsx";
-import Post from "./routes/post.jsx";
-import Blog from "./routes/blog.jsx";
+import Post from "./routes/blog/post/post.jsx";
+import Blog from "./routes/blog/blog.jsx";
+import Projects from "./routes/projects/projects.jsx";
 
 const router = createBrowserRouter([
-    {
-        path: "/",
+  {
+    path: "/",
+    element: <Root />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "projects",
+        element: <Projects />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "contact",
         element: <Root />,
         errorElement: <ErrorPage />,
-    },
-    {
-        path: "/apps/ksh",
-        element: <App name={"ksh"} />,
+      },
+      {
+        path: "projects/ksh",
+        element: <Project name={"ksh"} />,
         errorElement: <ErrorPage />,
-    },
-    {
-        path: "/apps/cryptop",
-        element: <App name={"cryptop"} />,
+      },
+      {
+        path: "projects/cryptop",
+        element: <Project name={"cryptop"} />,
         errorElement: <ErrorPage />,
-    },
-    {
-        path: "/apps/famify",
-        element: <App name={"famify"} />,
+      },
+      {
+        path: "projects/famify",
+        element: <Project name={"famify"} />,
         errorElement: <ErrorPage />,
-    },
-    {
-        path: "/apps/kanbo",
-        element: <App name={"Kanbo"} />,
+      },
+      {
+        path: "projects/kanbo",
+        element: <Project name={"Kanbo"} />,
         errorElement: <ErrorPage />,
-    },
-    {
-        path: "/apps/kanbo/privacy-policy",
+      },
+      {
+        path: "apps/kanbo/privacy-policy",
         element: <PrivacyPolicy name={"Kanbo"} />,
         errorElement: <ErrorPage />,
-    },
-    {
-        path: "/apps/kanbo/support",
+      },
+      {
+        path: "apps/kanbo/support",
         element: <Support name={"Kanbo"} />,
         errorElement: <ErrorPage />,
-    },
-    {
-        path: "/blog",
+      },
+      {
+        path: "blog",
         element: <Blog />,
         errorElement: <ErrorPage />,
-    },
-    {
-        path: "/blog/:postId",
+      },
+      {
+        path: "blog/:postId",
         element: <Post />,
         errorElement: <ErrorPage />,
-    },
+      },
+    ],
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-    <React.StrictMode>
-        <RouterProvider router={router} />
-    </React.StrictMode>
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
 );

@@ -16,4 +16,4 @@ const posts = filenames.map((filename) => {
   return { ...data, content };
 });
 
-writeFileSync("src/posts.json", JSON.stringify(posts));
+writeFileSync("./src/scripts/posts.json", JSON.stringify(posts));

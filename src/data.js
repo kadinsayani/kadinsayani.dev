@@ -1,13 +1,13 @@
 export const appData = [
-    {
-        name: "Kanbo",
-        description: "macOS application for creating Kanban boards 🖥️",
-        page: "/apps/kanbo",
-        repo: "https://github.com/kadinsayani/Kanbo",
-        link: "https://apps.apple.com/ca/app/kanbo/id6468838355?mt=12",
-        img: "",
-        type: "Apple",
-        privacyPolicy: `
+  {
+    name: "Kanbo",
+    description: "macOS application for creating Kanban boards 🖥️",
+    page: "/projects/kanbo",
+    repo: "https://github.com/kadinsayani/Kanbo",
+    link: "https://apps.apple.com/ca/app/kanbo/id6468838355?mt=12",
+    img: "",
+    type: "Apple",
+    privacyPolicy: `
 **Privacy Policy for Kanbo**
 
 This Privacy Policy describes how your personal information is collected, used, and shared when you use our mobile application, Kanbo (referred to as "we," "us," or "our").
@@ -28,32 +28,31 @@ We reserve the right to update our Privacy Policy to reflect changes in our prac
 If you have any questions or concerns about this Privacy Policy or your data, please contact us at me@kadinsayani.dev. 
 
 This Privacy Policy was last updated on 10/05/2023.`,
-    },
-    {
-        name: "ksh",
-        description: "Customizable Unix-like shell built in Rust ⌨️",
-        page: "/apps/ksh",
-        repo: "https://github.com/kadinsayani/ksh",
-        link: "https://github.com/kadinsayani/ksh",
-        img: "",
-    },
-    {
-        name: "cryptop",
-        description:
-            "A user friendly CLI for getting cryptocurrency prices and information 🚀",
-        page: "/apps/cryptop",
-        repo: "https://github.com/kadinsayani/cryptop",
-        link: "https://crates.io/crates/cryptop",
-        img: "",
-    },
-    {
-        name: "famify",
-        description:
-            "Web app for families with collaboration and interaction features including shared lists and twitter like social media features 🏡",
-        page: "/apps/famify",
-        repo: "https://github.com/kadinsayani/famify",
-        link: "https://github.com/kadinsayani/famify",
-        img: "",
-    },
+  },
+  {
+    name: "ksh",
+    description: "Customizable Unix-like shell built in Rust ⌨️",
+    page: "/projects/ksh",
+    repo: "https://github.com/kadinsayani/ksh",
+    link: "https://github.com/kadinsayani/ksh",
+    img: "",
+  },
+  {
+    name: "cryptop",
+    description:
+      "A user friendly CLI for getting cryptocurrency prices and information 🚀",
+    page: "/projects/cryptop",
+    repo: "https://github.com/kadinsayani/cryptop",
+    link: "https://crates.io/crates/cryptop",
+    img: "",
+  },
+  {
+    name: "famify",
+    description:
+      "Web app for families with collaboration and interaction features including shared lists and twitter like social media features 🏡",
+    page: "/projects/famify",
+    repo: "https://github.com/kadinsayani/famify",
+    link: "https://github.com/kadinsayani/famify",
+    img: "",
+  },
 ];
-

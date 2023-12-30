@@ -1,18 +1,10 @@
 import { Link } from "react-router-dom";
-import posts from "../posts.json";
-import ScrollToTop from "../components/scrollToTop";
-import "../styles/Blog.css";
+import posts from "../../scripts/posts.json";
+import "../App.css";
 
 function Blog() {
   return (
     <div className="blog-container">
-      <ScrollToTop />
-      <div className="socials">
-        <Link to="/">Home</Link>
-      </div>
-      <header className="blog-header">
-        <h1>My Blog</h1>
-      </header>
       <ul className="post-list">
         {posts.map((post) => {
           return (
