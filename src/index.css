@@ -4,15 +4,12 @@
   line-height: 1.5;
   font-weight: 400;
 
-  --main-black: #151515;
-  --main-blue: #3f84e5;
-  --main-white: #edf5fc;
-  --main-yellow: #f7b538;
-  --main-red: #b20d30;
+  /* b620e0 32c5ff f05138*/
 
   color-scheme: light dark;
-  color: var(--main-white) !important;
-  background: var(--main-black);
+  color: #ffffffde !important;
+  background: #323232;
+  /* background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,11 +20,11 @@
 
 a {
   font-weight: 500;
-  color: var(--main-white);
+  color: #ffffffde;
   text-decoration: inherit;
 }
 a:hover {
-  color: var(--main-white);
+  color: #ffffff;
 }
 
 body {
@@ -50,12 +47,12 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: var(--main-black);
+  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: var(--main-blue);
+  border-color: #646cff;
 }
 button:focus,
 button:focus-visible {

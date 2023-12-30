@@ -1,7 +1,6 @@
 import { appData } from "../data";
 import { PropTypes } from "prop-types";
 import ReactMarkdown from "react-markdown";
-import "./App.css";
 
 function PrivacyPolicy(props) {
   const app = appData.find((item) => item.name == props.name);
