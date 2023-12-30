@@ -108,11 +108,21 @@
   text-decoration: underline;
 }
 
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
 .contact {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 2px;
 }
 
 .app-img {
@@ -140,4 +150,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.blog-link {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+img {
+  border-radius: 10px;
 }

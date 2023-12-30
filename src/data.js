@@ -59,181 +59,6 @@ This Privacy Policy was last updated on 10/05/2023.`,
 
 export const projectData = [
   {
-    name: "PetPal",
-    project: "CPSC 581 Project 3",
-    page: "/projects/petpal",
-    repo: "https://github.com/kadinsayani/PetPal",
-    link: "https://github.com/kadinsayani/PetPal",
-    img: "/project3/img.png",
-    description:
-      "PetPal is an automatic pet feeder powered by an arduino integrated circuit. The device has a remote for programming the time for when you would like the food to be dispensed. It uses an infrared sensor to detect input from the infrared remote and a DS1307 real time clock (for tracking time) as an input device. It uses a micro servo motor as an output device. To make it fun, we shaped the pet feeder to look like a basketball hoop with a spout attached at the bottom, that is opened and closed by the motor. The spout opens exactly at the real time inputted into the remote and closes after the food is dispensed. There is also a compartment at the back of the device that can be used to store your supply of pet food. ",
-    detailedWriteup: [
-      "Throughout the prototyping and development phase, my role included integrating the circuit and developing the program for the arduino to run.",
-    ],
-    detailedPoints: [
-      {
-        point:
-          "A variation that dispenses food when triggered by button press.",
-      },
-      {
-        point:
-          "A vartiation where the user programs both the time and amount of food to dispense.",
-      },
-      {
-        point: "A detail where the user programs the time to dispense food.",
-      },
-      {
-        point: "A variation where the food is dispensed at sunrise, or sunset.",
-      },
-      {
-        point:
-          "A variation where the food is dispensed when pet starts barking.",
-      },
-      {
-        point:
-          "A variation where the user programs teh tiem to dispense food, but food will also be dispensed at sunrise or sunset as a fallback.",
-      },
-      {
-        point:
-          "A variation where food is dispensed based on the current weight (quantity) of food already dispensed.",
-      },
-      {
-        point:
-          "A detail showcasing the timer resetting after food has been dispensed.",
-      },
-      {
-        point:
-          "A variation inlcuding an LCD display that informs the user when their pet was fed.",
-      },
-      {
-        point: "A variation that includes a start button to reset the timer.",
-      },
-    ],
-    detailedImages: [
-      {
-        url: "/project3/detailed/dimg1.png",
-        caption: "Detailed Sketch 1",
-      },
-      {
-        url: "/project3/detailed/dimg2.png",
-        caption: "Detailed Sketch 2",
-      },
-      {
-        url: "/project3/detailed/dimg3.png",
-        caption: "Detailed Sketch 3",
-      },
-      {
-        url: "/project3/detailed/dimg4.png",
-        caption: "Detailed Sketch 4",
-      },
-      {
-        url: "/project3/detailed/dimg5.png",
-        caption: "Detailed Sketch 5",
-      },
-      {
-        url: "/project3/detailed/dimg6.png",
-        caption: "Detailed Sketch 6",
-      },
-      {
-        url: "/project3/detailed/dimg7.png",
-        caption: "Detailed Sketch 7",
-      },
-      {
-        url: "/project3/detailed/dimg8.png",
-        caption: "Detailed Sketch 8",
-      },
-      {
-        url: "/project3/detailed/dimg9.png",
-        caption: "Detailed Sketch 9",
-      },
-      {
-        url: "/project3/detailed/dimg10.png",
-        caption: "Detailed Sketch 10",
-      },
-    ],
-    conceptWriteup: [
-      "While ideating and developing our concept, my role included developing concept sketches, participating in group discussions, and filming/editing the concept video.",
-    ],
-    conceptPoints: [
-      {
-        point:
-          "Plant watering device that waters plants when triggered by sunrise.",
-      },
-      {
-        point: "Thermostat.",
-      },
-      {
-        point: "Automatic night light.",
-      },
-      {
-        point: "Smoke/Fire detector",
-      },
-      {
-        point: "Guitar tuner.",
-      },
-      {
-        point:
-          "Meditation companion that inlcudes an LCD with guided breathing exercises, and a pulse (heart rate) sensor.",
-      },
-      {
-        point:
-          "Room entry alert device that alerts users when someone enters the room.",
-      },
-      {
-        point:
-          "Plant monitoring device that displays metrics such as temperature and moisture.",
-      },
-      {
-        point: "Door lock triggered by clapping your hands.",
-      },
-      {
-        point: "Automatic and programmable pet feeder.",
-      },
-    ],
-    conceptImages: [
-      {
-        url: "/project3/concept/cimg1.png",
-        caption: "Concept Sketch 1",
-      },
-      {
-        url: "/project3/concept/cimg2.png",
-        caption: "Concept Sketch 2",
-      },
-      {
-        url: "/project3/concept/cimg3.png",
-        caption: "Concept Sketch 3",
-      },
-      {
-        url: "/project3/concept/cimg4.png",
-        caption: "Concept Sketch 4",
-      },
-      {
-        url: "/project3/concept/cimg5.png",
-        caption: "Concept Sketch 5",
-      },
-      {
-        url: "/project3/concept/cimg6.png",
-        caption: "Concept Sketch 6",
-      },
-      {
-        url: "/project3/concept/cimg7.png",
-        caption: "Concept Sketch 7",
-      },
-      {
-        url: "/project3/concept/cimg8.png",
-        caption: "Concept Sketch 8",
-      },
-      {
-        url: "/project3/concept/cimg9.png",
-        caption: "Concept Sketch 9",
-      },
-      {
-        url: "/project3/concept/cimg10.png",
-        caption: "Concept Sketch 10",
-      },
-    ],
-  },
-  {
     name: "virtual-forest",
     project: "CPSC 581 Project 1",
     page: "/projects/virtual-forest",
@@ -768,5 +593,356 @@ export const projectData = [
         },
       ],
     },
+  },
+  {
+    name: "PetPal",
+    project: "CPSC 581 Project 3",
+    page: "/projects/petpal",
+    repo: "https://github.com/kadinsayani/PetPal",
+    link: "https://github.com/kadinsayani/PetPal",
+    img: "/project3/img.png",
+    description:
+      "PetPal is an automatic pet feeder powered by an arduino integrated circuit. The device has a remote for programming the time for when you would like the food to be dispensed. It uses an infrared sensor to detect input from the infrared remote and a DS1307 real time clock (for tracking time) as an input device. It uses a micro servo motor as an output device. To make it fun, we shaped the pet feeder to look like a basketball hoop with a spout attached at the bottom, that is opened and closed by the motor. The spout opens exactly at the real time inputted into the remote and closes after the food is dispensed. There is also a compartment at the back of the device that can be used to store your supply of pet food. ",
+    detailedWriteup: [
+      "Throughout the prototyping and development phase, my role included integrating the circuit and developing the program for the arduino to run.",
+    ],
+    detailedPoints: [
+      {
+        point:
+          "A variation that dispenses food when triggered by button press.",
+      },
+      {
+        point:
+          "A variation where the user programs both the time and amount of food to dispense.",
+      },
+      {
+        point: "A detail where the user programs the time to dispense food.",
+      },
+      {
+        point: "A variation where the food is dispensed at sunrise, or sunset.",
+      },
+      {
+        point:
+          "A variation where the food is dispensed when pet starts barking.",
+      },
+      {
+        point:
+          "A variation where the user programs teh tiem to dispense food, but food will also be dispensed at sunrise or sunset as a fallback.",
+      },
+      {
+        point:
+          "A variation where food is dispensed based on the current weight (quantity) of food already dispensed.",
+      },
+      {
+        point:
+          "A detail showcasing the timer resetting after food has been dispensed.",
+      },
+      {
+        point:
+          "A variation inlcuding an LCD display that informs the user when their pet was fed.",
+      },
+      {
+        point: "A variation that includes a start button to reset the timer.",
+      },
+    ],
+    detailedImages: [
+      {
+        url: "/project3/detailed/dimg1.png",
+        caption: "Detailed Sketch 1",
+      },
+      {
+        url: "/project3/detailed/dimg2.png",
+        caption: "Detailed Sketch 2",
+      },
+      {
+        url: "/project3/detailed/dimg3.png",
+        caption: "Detailed Sketch 3",
+      },
+      {
+        url: "/project3/detailed/dimg4.png",
+        caption: "Detailed Sketch 4",
+      },
+      {
+        url: "/project3/detailed/dimg5.png",
+        caption: "Detailed Sketch 5",
+      },
+      {
+        url: "/project3/detailed/dimg6.png",
+        caption: "Detailed Sketch 6",
+      },
+      {
+        url: "/project3/detailed/dimg7.png",
+        caption: "Detailed Sketch 7",
+      },
+      {
+        url: "/project3/detailed/dimg8.png",
+        caption: "Detailed Sketch 8",
+      },
+      {
+        url: "/project3/detailed/dimg9.png",
+        caption: "Detailed Sketch 9",
+      },
+      {
+        url: "/project3/detailed/dimg10.png",
+        caption: "Detailed Sketch 10",
+      },
+    ],
+    conceptWriteup: [
+      "While ideating and developing our concept, my role included developing concept sketches, participating in group discussions, and filming/editing the concept video.",
+    ],
+    conceptPoints: [
+      {
+        point:
+          "Plant watering device that waters plants when triggered by sunrise.",
+      },
+      {
+        point: "Thermostat.",
+      },
+      {
+        point: "Automatic night light.",
+      },
+      {
+        point: "Smoke/Fire detector",
+      },
+      {
+        point: "Guitar tuner.",
+      },
+      {
+        point:
+          "Meditation companion that inlcudes an LCD with guided breathing exercises, and a pulse (heart rate) sensor.",
+      },
+      {
+        point:
+          "Room entry alert device that alerts users when someone enters the room.",
+      },
+      {
+        point:
+          "Plant monitoring device that displays metrics such as temperature and moisture.",
+      },
+      {
+        point: "Door lock triggered by clapping your hands.",
+      },
+      {
+        point: "Automatic and programmable pet feeder.",
+      },
+    ],
+    conceptImages: [
+      {
+        url: "/project3/concept/cimg1.png",
+        caption: "Concept Sketch 1",
+      },
+      {
+        url: "/project3/concept/cimg2.png",
+        caption: "Concept Sketch 2",
+      },
+      {
+        url: "/project3/concept/cimg3.png",
+        caption: "Concept Sketch 3",
+      },
+      {
+        url: "/project3/concept/cimg4.png",
+        caption: "Concept Sketch 4",
+      },
+      {
+        url: "/project3/concept/cimg5.png",
+        caption: "Concept Sketch 5",
+      },
+      {
+        url: "/project3/concept/cimg6.png",
+        caption: "Concept Sketch 6",
+      },
+      {
+        url: "/project3/concept/cimg7.png",
+        caption: "Concept Sketch 7",
+      },
+      {
+        url: "/project3/concept/cimg8.png",
+        caption: "Concept Sketch 8",
+      },
+      {
+        url: "/project3/concept/cimg9.png",
+        caption: "Concept Sketch 9",
+      },
+      {
+        url: "/project3/concept/cimg10.png",
+        caption: "Concept Sketch 10",
+      },
+    ],
+  },
+  {
+    name: "VRMeet",
+    project: "CPSC 581 Project 4",
+    page: "/projects/vrmeet",
+    repo: "https://github.com/samihahoque/VRMeet",
+    link: "https://github.com/samihahoque/VRMeet",
+    img: "/project4/img.png",
+    rotoscope: "/project4/rotoscope.png",
+    description: "Virtual meeting room including avatars and document sharing.",
+    detailedWriteup: [
+      "Throughout the prototyping and development phase, my role included ideating, contributing to group discussions, and coding the application.",
+    ],
+    detailedPoints: [
+      {
+        point: "A detail showcasing the option to select from different rooms.",
+      },
+      {
+        point: "A detail showcasing user avatars/profile pictures.",
+      },
+      {
+        point: "A detail showing a avatar preview before entering a room.",
+      },
+      {
+        point: "A detail showcasing a participant waiting room.",
+      },
+      {
+        point:
+          "A variation where the meeting won't begin until all users have entered the room.",
+      },
+      {
+        point:
+          "A variation where users can adjust the environment/room setting.",
+      },
+      {
+        point:
+          "A detail showcasing the ability to collaboratively share documents.",
+      },
+      {
+        point: "A variation which includes a chat feature.",
+      },
+      {
+        point:
+          "A detail visualizing the implementation of audio channels in the meeting room.",
+      },
+      {
+        point:
+          "A detail showcasing the ability to leave rooms at any point during a meeting.",
+      },
+    ],
+    detailedImages: [
+      {
+        url: "/project4/detailed/dimg1.png",
+        caption: "Detailed Sketch 1",
+      },
+      {
+        url: "/project4/detailed/dimg2.png",
+        caption: "Detailed Sketch 2",
+      },
+      {
+        url: "/project4/detailed/dimg3.png",
+        caption: "Detailed Sketch 3",
+      },
+      {
+        url: "/project4/detailed/dimg4.png",
+        caption: "Detailed Sketch 4",
+      },
+      {
+        url: "/project4/detailed/dimg5.png",
+        caption: "Detailed Sketch 5",
+      },
+      {
+        url: "/project4/detailed/dimg6.png",
+        caption: "Detailed Sketch 6",
+      },
+      {
+        url: "/project4/detailed/dimg7.png",
+        caption: "Detailed Sketch 7",
+      },
+      {
+        url: "/project4/detailed/dimg8.png",
+        caption: "Detailed Sketch 8",
+      },
+      {
+        url: "/project4/detailed/dimg9.png",
+        caption: "Detailed Sketch 9",
+      },
+      {
+        url: "/project4/detailed/dimg10.png",
+        caption: "Detailed Sketch 10",
+      },
+    ],
+    conceptWriteup: [
+      "While ideating and developing our concept, my role included developing concept sketches and participating in group discussions.",
+    ],
+    conceptPoints: [
+      {
+        point: "AR meeting space.",
+      },
+      {
+        point: "Emotion aware conferencing.",
+      },
+      {
+        point: "Mobile app for reviewing documents collaboratively.",
+      },
+      {
+        point:
+          "Virtual business cards shared and viewed via an AR application.",
+      },
+      {
+        point:
+          "Empathy assistant which helps draft email replies while considering other indidivuals tones and feelings.",
+      },
+      {
+        point:
+          "Virtual water cooler space, used for casual work related conversations.",
+      },
+      {
+        point:
+          "Anonymous idea sharing, designed to increase collaboration and innovation.",
+      },
+      {
+        point:
+          "Empathetic chatbot for aiding with tasks that require a human touch.",
+      },
+      {
+        point:
+          "Chat platform that integrates emojis and styling desinged to improve communication.",
+      },
+      {
+        point:
+          "VR toastmasters for practicing public speaking and developing leadership skills.",
+      },
+    ],
+    conceptImages: [
+      {
+        url: "/project4/concept/cimg1.png",
+        caption: "Concept Sketch 1",
+      },
+      {
+        url: "/project4/concept/cimg2.png",
+        caption: "Concept Sketch 2",
+      },
+      {
+        url: "/project4/concept/cimg3.png",
+        caption: "Concept Sketch 3",
+      },
+      {
+        url: "/project4/concept/cimg4.png",
+        caption: "Concept Sketch 4",
+      },
+      {
+        url: "/project4/concept/cimg5.png",
+        caption: "Concept Sketch 5",
+      },
+      {
+        url: "/project4/concept/cimg6.png",
+        caption: "Concept Sketch 6",
+      },
+      {
+        url: "/project4/concept/cimg7.png",
+        caption: "Concept Sketch 7",
+      },
+      {
+        url: "/project4/concept/cimg8.png",
+        caption: "Concept Sketch 8",
+      },
+      {
+        url: "/project4/concept/cimg9.png",
+        caption: "Concept Sketch 9",
+      },
+      {
+        url: "/project4/concept/cimg10.png",
+        caption: "Concept Sketch 10",
+      },
+    ],
   },
 ];
