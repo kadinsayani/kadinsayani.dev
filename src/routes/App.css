@@ -224,7 +224,7 @@ img {
 .navbar {
   /* font-family: "SF Mono", SFMono-Regular, ui-monospace, "DejaVu Sans Mono",
     Menlo, Consolas, monospace; */
-  font-size: 20px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -246,7 +246,7 @@ img {
 }
 
 .me h2 {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .me-img {
@@ -281,4 +281,23 @@ img {
   align-items: center;
   justify-content: center;
   gap: 2px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .me {
+    margin: 10px;
+  }
+
+  .nav-links {
+    margin: 10px;
+  }
+  
+  .socials {
+    margin-top: 10px;
+  }
 }
