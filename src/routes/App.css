@@ -146,8 +146,14 @@ img {
   text-align: left;
   margin: auto;
   padding: 0 20px;
-  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
   overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.react-markdown code {
+  white-space: pre-wrap;
 }
 
 .react-markdown ul {
@@ -186,7 +192,6 @@ img {
 .react-markdown a:hover {
   color: var(--main-white);
 }
-
 
 .post-list {
   list-style: none;
@@ -281,21 +286,13 @@ img {
   gap: 2px;
 }
 
-@media (max-width: 600px) {
-
-    .react-markdown {
-    padding: 0 0px;
-    margin-top: 0px;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-  }
-
+@media (max-width: 768px) {
   .title {
-    font-size: 1.5em; 
+    font-size: 1.5em;
   }
 
   .date {
-    font-size: 0.8em; 
+    font-size: 0.8em;
   }
   .navbar {
     flex-direction: column;
@@ -309,14 +306,13 @@ img {
   .nav-links {
     margin: 10px;
   }
-  
+
   .socials {
     margin-top: 10px;
   }
 
   .post {
-      margin-top: 140px;
-      max-width: 80%;
+    max-width: 80vw;
+    margin-top: 140px;
   }
-
 }
