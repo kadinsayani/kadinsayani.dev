@@ -6,7 +6,7 @@ author: Kadin Sayani
 pubDate: 2023-12-14
 ---
 
-Embarking on a journey through the expansive terrain of Rust, I find myself driven by the ambition to acquire the prowess of a seasoned systems developer. One intriguing idea that crossed my mind was to create my own Unix shell. In this blog post, I'll guide you through the process of crafting a shell program using Rust, a powerful systems programming language!
+In the realm of systems programming, Rust has emerged as a language of choice for many developers due to its focus on performance, memory safety, and concurrency. One project that perfectly encapsulates the power and versatility of Rust is the creation of a Unix shell. This blog post will serve as a comprehensive guide, walking you through the process of building a Unix-like shell using Rust. We will delve into various aspects of Rust including error handling, pattern matching, and process management. So, whether you're a novice Rustacean or a seasoned developer, join me on this exciting journey of crafting a shell program using Rust.
 
 ## What is a shell?
 
@@ -142,7 +142,7 @@ In this function, we use pattern matching to handle different commands. First, w
 
 For all other commands, we use the `std::process::Command` crate to spawn a new process to execute the given command with the provided arguments. The `Command::new(command)` function creates a new `Command` that, when configured, can spawn a process. The `args(args)` method adds arguments to the command, and the `output()` method captures the output of the command when it finishes. The `expect("Failed to execute command")` call will panic if the command fails to execute.
 
-The function then checks whether the command was successful by calling `output.status.success()`. If the command was successful, it returns the standard output (`stdout`); if it was not, it returns the standard error (`stderr`). Both `stdout` and `stderr` are returned as `String`s.
+The function then checks whether the command was successful by calling `output.status.success()`. If the command was successful, it returns the standard output (`stdout`); if it was not, it returns the standard error (`stderr`). Both `stdout` and `stderr` are returned as `String`'s.
 
 We just have one last thing to do, and that is update our `main()` function to call `execute_command()`.
 
