@@ -92,6 +92,12 @@
   background-color: #ffffff20;
 }
 
+@media (max-width: 768px) {
+  .project-info {
+    margin-top: 20px;
+  }
+}
+
 .back-button {
   position: absolute;
   top: 20px;
