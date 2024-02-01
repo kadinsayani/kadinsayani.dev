@@ -37,7 +37,7 @@ export default function Project(props) {
   }, [logo, img1, img2]);
 
   return (
-    <div className="project-info">
+    <div>
       <h1>{app.name}</h1>
       <div className="contact">
         <a href={app.repo}>

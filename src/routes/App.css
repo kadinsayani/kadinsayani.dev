@@ -92,12 +92,6 @@
   background-color: #ffffff20;
 }
 
-@media (max-width: 768px) {
-  .project-info {
-    margin-top: 40px;
-  }
-}
-
 .back-button {
   position: absolute;
   top: 20px;
@@ -121,13 +115,12 @@
   margin-right: 10px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .skip {
     display: none;
   }
   .app-img {
-    width: 300px;
-    height: auto;
+    display: none;
   }
 }
 
