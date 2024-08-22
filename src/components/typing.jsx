@@ -7,7 +7,7 @@ function Typing() {
                 sequence={[
                     "> _",
                     1000,
-                    "> Software Developer",
+                    "> Software Engineer",
                     100000000000,
                     "",
                 ]}
